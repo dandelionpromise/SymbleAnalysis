@@ -1,0 +1,1394 @@
+No.,Layer,Sibling,Name,Type,Addr,encoding,TypeSize(结构体为总大小),bit_size,bit_offset,Factor,Offset,authority(r可读，w可写，x可执行)
+0,0,2,system_S32K144.c,,,19,,,,,,
+1,1,0,SystemInit,void (void),0x129e8,21,,,,,,
+2,0,4,startup.c,,,19,,,,,,
+3,1,0,init_data_bss,void (void),0x12a14,21,,,,,,
+4,0,7,main.c,,,19,,,,,,
+5,1,6,Public_Buff,uint8 [512],0x20002ea4,8,1,0,0,1,0,rwx
+6,1,0,main,int (void),0x12b08,21,,,,,,
+7,0,66,Prot_Smile.c,,,19,,,,,,
+8,1,38,Smile_Pdu,TP_PDU,0x1fff8430,,40,,,1,0,rwx
+9,2,10,CANID,uint8,0x0,8,1,0,0,1,0,rwx
+10,2,11,RxFrameID,uint32,0x4,7,4,0,0,1,0,rwx
+11,2,12,RxFrameIDE,uint8,0x8,8,1,0,0,1,0,rwx
+12,2,13,TxFrameID,uint32,0xc,7,4,0,0,1,0,rwx
+13,2,14,TxFrameIDE,uint8,0x10,8,1,0,0,1,0,rwx
+14,2,15,RxInvtTime,MILLISECOND,0x14,7,4,0,0,1,0,rwx
+15,2,16,TxInvtTime,MILLISECOND,0x18,7,4,0,0,1,0,rwx
+16,2,17,RxPduNum,uint8,0x1c,8,1,0,0,1,0,rwx
+17,2,18,TxPduNum,uint8,0x1d,8,1,0,0,1,0,rwx
+18,2,28,pRxPdu,TP_PCU *,0x20,,24,,,1,0,rwx
+19,3,20,pCData,void *,0x0,21,4,0,0,1,0,rwx
+20,3,21,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+21,3,22,Status,uint8,0x6,8,1,0,0,1,0,rwx
+22,3,23,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+23,3,24,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+24,3,25,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+25,3,26,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+26,3,27,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+27,3,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+28,2,0,pTxPdu,TP_PCU *,0x24,,24,,,1,0,rwx
+29,3,30,pCData,void *,0x0,21,4,0,0,1,0,rwx
+30,3,31,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+31,3,32,Status,uint8,0x6,8,1,0,0,1,0,rwx
+32,3,33,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+33,3,34,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+34,3,35,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+35,3,36,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+36,3,37,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+37,3,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+38,1,39,CRC32Table,uint32 [256] const,0x1ee98,7,4,0,0,1,0,rwx
+39,1,40,Smile_RxBuff,uint8 [1000],0x2000348c,8,1,0,0,1,0,rwx
+40,1,41,Smile_TxBuff,uint8 [1000],0x200030a4,8,1,0,0,1,0,rwx
+41,1,51,Smile_Rx_Pcu,TP_PCU [1],0x1fff8400,,24,,,1,0,rwx
+42,2,43,pCData,void *,0x0,21,4,0,0,1,0,rwx
+43,2,44,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+44,2,45,Status,uint8,0x6,8,1,0,0,1,0,rwx
+45,2,46,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+46,2,47,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+47,2,48,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+48,2,49,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+49,2,50,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+50,2,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+51,1,61,Smile_Tx_Pcu,TP_PCU [1],0x1fff8418,,24,,,1,0,rwx
+52,2,53,pCData,void *,0x0,21,4,0,0,1,0,rwx
+53,2,54,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+54,2,55,Status,uint8,0x6,8,1,0,0,1,0,rwx
+55,2,56,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+56,2,57,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+57,2,58,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+58,2,59,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+59,2,60,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+60,2,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+61,1,62,CRC32_ReInit,static void (void),0x12bc4,21,,,,,,
+62,1,63,CRC32_Calculate,"static void (uint8, uint32)",0x12bdc,21,,,,,,
+63,1,64,CRC32_GetCrc,static uint32 (void),0x12c64,21,,,,,,
+64,1,65,Smile_App_TxIndication,void (uint16),0x12c7c,21,,,,,,
+65,1,0,Smile_App_RxIndication,"void (void *, uint16)",0x12c90,21,,,,,,
+66,0,136,Prot_PBmsM.c,,,19,,,,,,
+67,1,84,PBMSM_App_RecvPGN,PROT_PGN [1],0x20003874,,27,,,1,0,rwx
+68,2,69,FramType,uint8,0x0,8,1,0,0,1,0,rwx
+69,2,70,mPDUF,uint8,0x1,8,1,0,0,1,0,rwx
+70,2,71,mPDUS,uint8,0x2,8,1,0,0,1,0,rwx
+71,2,72,mSource,uint8,0x3,8,1,0,0,1,0,rwx
+72,2,73,mPriority,uint8,0x4,8,1,0,0,1,0,rwx
+73,2,74,mPage,uint8,0x5,8,1,0,0,1,0,rwx
+74,2,75,mRsv,uint8,0x6,8,1,0,0,1,0,rwx
+75,2,76,mDataLen,uint16,0x7,7,2,0,0,1,0,rwx
+76,2,77,mData,uint8 *,0x9,8,1,0,0,1,0,rwx
+77,2,78,mDataMaxLen,uint16,0xd,7,2,0,0,1,0,rwx
+78,2,79,mTransRate,MILLISECOND,0xf,7,4,0,0,1,0,rwx
+79,2,80,mTimer,MILLISECOND,0x13,7,4,0,0,1,0,rwx
+80,2,81,mEnable,uint8,0x17,8,1,0,0,1,0,rwx
+81,2,82,mPGState,uint8,0x18,8,1,0,0,1,0,rwx
+82,2,83,mTransType,uint8,0x19,8,1,0,0,1,0,rwx
+83,2,0,mCanNum,uint8,0x1a,8,1,0,0,1,0,rwx
+84,1,101,PBMSM_App_SendPGN,PROT_PGN [6],0x20003898,,27,,,1,0,rwx
+85,2,86,FramType,uint8,0x0,8,1,0,0,1,0,rwx
+86,2,87,mPDUF,uint8,0x1,8,1,0,0,1,0,rwx
+87,2,88,mPDUS,uint8,0x2,8,1,0,0,1,0,rwx
+88,2,89,mSource,uint8,0x3,8,1,0,0,1,0,rwx
+89,2,90,mPriority,uint8,0x4,8,1,0,0,1,0,rwx
+90,2,91,mPage,uint8,0x5,8,1,0,0,1,0,rwx
+91,2,92,mRsv,uint8,0x6,8,1,0,0,1,0,rwx
+92,2,93,mDataLen,uint16,0x7,7,2,0,0,1,0,rwx
+93,2,94,mData,uint8 *,0x9,8,1,0,0,1,0,rwx
+94,2,95,mDataMaxLen,uint16,0xd,7,2,0,0,1,0,rwx
+95,2,96,mTransRate,MILLISECOND,0xf,7,4,0,0,1,0,rwx
+96,2,97,mTimer,MILLISECOND,0x13,7,4,0,0,1,0,rwx
+97,2,98,mEnable,uint8,0x17,8,1,0,0,1,0,rwx
+98,2,99,mPGState,uint8,0x18,8,1,0,0,1,0,rwx
+99,2,100,mTransType,uint8,0x19,8,1,0,0,1,0,rwx
+100,2,0,mCanNum,uint8,0x1a,8,1,0,0,1,0,rwx
+101,1,111,PBMSM_RX_PARA,PBMSM_CONST_PARA [1] const,0x1f298,,10,,,1,0,rwx
+102,2,103,prior,uint8,0x0,8,1,0,0,1,0,rwx
+103,2,104,rsv,uint8,0x1,8,1,0,0,1,0,rwx
+104,2,105,page,uint8,0x2,8,1,0,0,1,0,rwx
+105,2,106,pf,uint8,0x3,8,1,0,0,1,0,rwx
+106,2,107,ps,uint8,0x4,8,1,0,0,1,0,rwx
+107,2,108,sa,uint8,0x5,8,1,0,0,1,0,rwx
+108,2,109,framtype,uint8,0x6,8,1,0,0,1,0,rwx
+109,2,110,transtype,uint8,0x7,8,1,0,0,1,0,rwx
+110,2,0,rate,uint16,0x8,7,2,0,0,1,0,rwx
+111,1,121,PBMSM_TX_PARA,PBMSM_CONST_PARA [6] const,0x1f2a4,,10,,,1,0,rwx
+112,2,113,prior,uint8,0x0,8,1,0,0,1,0,rwx
+113,2,114,rsv,uint8,0x1,8,1,0,0,1,0,rwx
+114,2,115,page,uint8,0x2,8,1,0,0,1,0,rwx
+115,2,116,pf,uint8,0x3,8,1,0,0,1,0,rwx
+116,2,117,ps,uint8,0x4,8,1,0,0,1,0,rwx
+117,2,118,sa,uint8,0x5,8,1,0,0,1,0,rwx
+118,2,119,framtype,uint8,0x6,8,1,0,0,1,0,rwx
+119,2,120,transtype,uint8,0x7,8,1,0,0,1,0,rwx
+120,2,0,rate,uint16,0x8,7,2,0,0,1,0,rwx
+121,1,122,PBMSM_App_Rx_Dta,uint8 [1][8],0x20003890,8,1,0,0,1,0,rwx
+122,1,123,PBMSM_App_Tx_Dta,uint8 [6][8],0x2000393c,8,1,0,0,1,0,rwx
+123,1,124,PBMSM_App_Init,void (PROT_APP_DATA),0x13030,21,,,,,,
+124,1,125,PBMSM_App_Rx,"BOOLEAN (uint8, uint8)",0x134b0,21,,,,,,
+125,1,126,PBMSM_App_Tx,"BOOLEAN (uint8, uint8)",0x134dc,21,,,,,,
+126,1,127,PBMSM_App_RxTimeout,"void (uint8, uint8)",0x13510,21,,,,,,
+127,1,128,PBMSM_App_TxTimeout,"void (uint8, uint8)",0x13534,21,,,,,,
+128,1,129,PBMSM_App_RecvFram,"BOOLEAN (uint8, J1939_FRAM)",0x13558,21,,,,,,
+129,1,130,PBMSM_App_RxM_0x17,BOOLEAN (void),0x136bc,21,,,,,,
+130,1,131,PBMSM_App_TxM_0x11,BOOLEAN (void),0x13764,21,,,,,,
+131,1,132,PBMSM_App_TxM_0x12,BOOLEAN (void),0x138a8,21,,,,,,
+132,1,133,PBMSM_App_TxM_0x13,BOOLEAN (void),0x139d8,21,,,,,,
+133,1,134,PBMSM_App_TxM_0x14,BOOLEAN (void),0x13b18,21,,,,,,
+134,1,135,PBMSM_App_TxM_0x15,BOOLEAN (void),0x13c58,21,,,,,,
+135,1,0,PBMSM_App_TxM_0x16,BOOLEAN (void),0x13d70,21,,,,,,
+136,0,210,Prot_Cfg.c,,,19,,,,,,
+137,1,177,Prot_Cfg_SubApp,PROT_APP [1],0x1fff8458,,40,,,1,0,rwx
+138,2,0,dta,PROT_APP_DATA,0x0,,16,,,1,0,rwx
+139,3,140,TotalAddr,uint8,0x0,8,1,0,0,1,0,rwx
+140,3,141,TotalSendPara,uint8,0x1,8,1,0,0,1,0,rwx
+141,3,142,TotalRecvPara,uint8,0x2,8,1,0,0,1,0,rwx
+142,3,159,SendPGN,PROT_PGN *,0x4,,27,,,1,0,rwx
+143,4,144,FramType,uint8,0x0,8,1,0,0,1,0,rwx
+144,4,145,mPDUF,uint8,0x1,8,1,0,0,1,0,rwx
+145,4,146,mPDUS,uint8,0x2,8,1,0,0,1,0,rwx
+146,4,147,mSource,uint8,0x3,8,1,0,0,1,0,rwx
+147,4,148,mPriority,uint8,0x4,8,1,0,0,1,0,rwx
+148,4,149,mPage,uint8,0x5,8,1,0,0,1,0,rwx
+149,4,150,mRsv,uint8,0x6,8,1,0,0,1,0,rwx
+150,4,151,mDataLen,uint16,0x7,7,2,0,0,1,0,rwx
+151,4,152,mData,uint8 *,0x9,8,1,0,0,1,0,rwx
+152,4,153,mDataMaxLen,uint16,0xd,7,2,0,0,1,0,rwx
+153,4,154,mTransRate,MILLISECOND,0xf,7,4,0,0,1,0,rwx
+154,4,155,mTimer,MILLISECOND,0x13,7,4,0,0,1,0,rwx
+155,4,156,mEnable,uint8,0x17,8,1,0,0,1,0,rwx
+156,4,157,mPGState,uint8,0x18,8,1,0,0,1,0,rwx
+157,4,158,mTransType,uint8,0x19,8,1,0,0,1,0,rwx
+158,4,0,mCanNum,uint8,0x1a,8,1,0,0,1,0,rwx
+159,3,176,RecvPGN,PROT_PGN *,0x8,,27,,,1,0,rwx
+160,4,161,FramType,uint8,0x0,8,1,0,0,1,0,rwx
+161,4,162,mPDUF,uint8,0x1,8,1,0,0,1,0,rwx
+162,4,163,mPDUS,uint8,0x2,8,1,0,0,1,0,rwx
+163,4,164,mSource,uint8,0x3,8,1,0,0,1,0,rwx
+164,4,165,mPriority,uint8,0x4,8,1,0,0,1,0,rwx
+165,4,166,mPage,uint8,0x5,8,1,0,0,1,0,rwx
+166,4,167,mRsv,uint8,0x6,8,1,0,0,1,0,rwx
+167,4,168,mDataLen,uint16,0x7,7,2,0,0,1,0,rwx
+168,4,169,mData,uint8 *,0x9,8,1,0,0,1,0,rwx
+169,4,170,mDataMaxLen,uint16,0xd,7,2,0,0,1,0,rwx
+170,4,171,mTransRate,MILLISECOND,0xf,7,4,0,0,1,0,rwx
+171,4,172,mTimer,MILLISECOND,0x13,7,4,0,0,1,0,rwx
+172,4,173,mEnable,uint8,0x17,8,1,0,0,1,0,rwx
+173,4,174,mPGState,uint8,0x18,8,1,0,0,1,0,rwx
+174,4,175,mTransType,uint8,0x19,8,1,0,0,1,0,rwx
+175,4,0,mCanNum,uint8,0x1a,8,1,0,0,1,0,rwx
+176,3,0,AutoSendFlag,uint8,0xc,8,1,0,0,1,0,rwx
+177,1,208,CanTp_Cfg_SubApp,CANTP_APP [2],0x1fff8480,,12,,,1,0,rwx
+178,2,0,Pdu,TP_PDU *,0x0,,40,,,1,0,rwx
+179,3,180,CANID,uint8,0x0,8,1,0,0,1,0,rwx
+180,3,181,RxFrameID,uint32,0x4,7,4,0,0,1,0,rwx
+181,3,182,RxFrameIDE,uint8,0x8,8,1,0,0,1,0,rwx
+182,3,183,TxFrameID,uint32,0xc,7,4,0,0,1,0,rwx
+183,3,184,TxFrameIDE,uint8,0x10,8,1,0,0,1,0,rwx
+184,3,185,RxInvtTime,MILLISECOND,0x14,7,4,0,0,1,0,rwx
+185,3,186,TxInvtTime,MILLISECOND,0x18,7,4,0,0,1,0,rwx
+186,3,187,RxPduNum,uint8,0x1c,8,1,0,0,1,0,rwx
+187,3,188,TxPduNum,uint8,0x1d,8,1,0,0,1,0,rwx
+188,3,198,pRxPdu,TP_PCU *,0x20,,24,,,1,0,rwx
+189,4,190,pCData,void *,0x0,21,4,0,0,1,0,rwx
+190,4,191,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+191,4,192,Status,uint8,0x6,8,1,0,0,1,0,rwx
+192,4,193,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+193,4,194,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+194,4,195,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+195,4,196,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+196,4,197,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+197,4,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+198,3,0,pTxPdu,TP_PCU *,0x24,,24,,,1,0,rwx
+199,4,200,pCData,void *,0x0,21,4,0,0,1,0,rwx
+200,4,201,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+201,4,202,Status,uint8,0x6,8,1,0,0,1,0,rwx
+202,4,203,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+203,4,204,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+204,4,205,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+205,4,206,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+206,4,207,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+207,4,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+208,1,209,Prot_Cfg_Init,void (void),0x13f60,21,,,,,,
+209,1,0,CanTp_Cfg_Init,void (void),0x13f78,21,,,,,,
+210,0,241,PBms_Process.c,,,19,,,,,,
+211,1,214,PBms_Info,PBMS_INFO,0x20000004,,5,,,1,0,rwx
+212,2,213,ForceMode,uint8,0x0,8,1,0,0,1,0,rwx
+213,2,0,ForceEntetTime,uint32,0x1,7,4,0,0,1,0,rwx
+214,1,233,Bat_Info,BAT_INFO,0x2000000c,,66,,,1,0,rwx
+215,2,216,ProcessRc,uint8,0x0,8,1,0,0,1,0,rwx
+216,2,217,CellVolt,CELLVOLT_01MV [13],0x1,7,2,0,0,1,0,rwx
+217,2,218,Temp,TEMPERATURE_1C [4],0x1b,6,1,0,0,1,0,rwx
+218,2,219,CellMaxVolt,CELLVOLT_01MV,0x1f,7,2,0,0,1,0,rwx
+219,2,220,CellMinVolt,CELLVOLT_01MV,0x21,7,2,0,0,1,0,rwx
+220,2,221,CellDiffVolt,CELLVOLT_01MV,0x23,7,2,0,0,1,0,rwx
+221,2,222,TempMaxVal,TEMPERATURE_1C,0x25,6,1,0,0,1,0,rwx
+222,2,223,TempMinVal,TEMPERATURE_1C,0x26,6,1,0,0,1,0,rwx
+223,2,224,TempDiffVal,TEMPERATURE_1C,0x27,6,1,0,0,1,0,rwx
+224,2,225,TerminaleVolt,TERMINALVOLT_MV,0x28,7,4,0,0,1,0,rwx
+225,2,226,VpackVolt,TERMINALVOLT_MV,0x2c,7,4,0,0,1,0,rwx
+226,2,227,CTVolt,TERMINALVOLT_MV,0x30,7,4,0,0,1,0,rwx
+227,2,228,Current,CURRENT_MA,0x34,5,4,0,0,1,0,rwx
+228,2,229,Soc,SOCSOH_01PER,0x38,7,2,0,0,1,0,rwx
+229,2,230,Soh,SOCSOH_01PER,0x3a,7,2,0,0,1,0,rwx
+230,2,231,ChargeStatus,BOOLEAN,0x3c,8,1,0,0,1,0,rwx
+231,2,232,ForceMode,BOOLEAN,0x3d,8,1,0,0,1,0,rwx
+232,2,0,RstTimes,uint32,0x3e,7,4,0,0,1,0,rwx
+233,1,234,MOSProcess_Init,static void (void),0x13f8c,21,,,,,,
+234,1,235,ModeProcess_Init,static void (void),0x13f98,21,,,,,,
+235,1,236,BatInfoProcess_Init,static void (void),0x13fa4,21,,,,,,
+236,1,237,MOSProcess_Main,static void (void),0x13fe8,21,,,,,,
+237,1,238,ModeProcess_Main,static void (void),0x1415c,21,,,,,,
+238,1,239,BatInfoProcess_Main,static void (void),0x141a0,21,,,,,,
+239,1,240,PbmsProcess_Init,void (void),0x142c8,21,,,,,,
+240,1,0,PbmsProcess_Main,void (void),0x142e0,21,,,,,,
+241,0,245,PBms_Alarm.c,,,19,,,,,,
+242,1,243,PBmsAlarm_Info,uint8 [20],0x20000054,8,1,0,0,1,0,rwx
+243,1,244,PBmsAlarms_Init,void (void),0x142f8,21,,,,,,
+244,1,0,PBmsAlarm_Main,void (void),0x1432c,21,,,,,,
+245,0,318,FRecordStore.c,,,19,,,,,,
+246,1,256,FRecord,FREC_TYPE,0x20003dd0,,22,,,1,0,rwx
+247,2,248,StoreNum,uint32 [20],0x0,7,4,0,0,1,0,rwx
+248,2,249,TotalNum,uint32 [1],0x4,7,4,0,0,1,0,rwx
+249,2,250,DataLen,uint16 [1],0x8,7,2,0,0,1,0,rwx
+250,2,251,bInit,BOOLEAN [1],0xa,8,1,0,0,1,0,rwx
+251,2,252,CurAddr,uint32 [1],0xb,7,4,0,0,1,0,rwx
+252,2,253,bManu,BOOLEAN [1],0xf,8,1,0,0,1,0,rwx
+253,2,254,UpConnect,BOOLEAN,0x10,8,1,0,0,1,0,rwx
+254,2,255,bFlashErase,BOOLEAN,0x11,8,1,0,0,1,0,rwx
+255,2,0,UpConnectTime,uint32,0x12,7,4,0,0,1,0,rwx
+256,1,286,Rec_Pdu,TP_PDU,0x1fff84c8,,40,,,1,0,rwx
+257,2,258,CANID,uint8,0x0,8,1,0,0,1,0,rwx
+258,2,259,RxFrameID,uint32,0x4,7,4,0,0,1,0,rwx
+259,2,260,RxFrameIDE,uint8,0x8,8,1,0,0,1,0,rwx
+260,2,261,TxFrameID,uint32,0xc,7,4,0,0,1,0,rwx
+261,2,262,TxFrameIDE,uint8,0x10,8,1,0,0,1,0,rwx
+262,2,263,RxInvtTime,MILLISECOND,0x14,7,4,0,0,1,0,rwx
+263,2,264,TxInvtTime,MILLISECOND,0x18,7,4,0,0,1,0,rwx
+264,2,265,RxPduNum,uint8,0x1c,8,1,0,0,1,0,rwx
+265,2,266,TxPduNum,uint8,0x1d,8,1,0,0,1,0,rwx
+266,2,276,pRxPdu,TP_PCU *,0x20,,24,,,1,0,rwx
+267,3,268,pCData,void *,0x0,21,4,0,0,1,0,rwx
+268,3,269,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+269,3,270,Status,uint8,0x6,8,1,0,0,1,0,rwx
+270,3,271,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+271,3,272,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+272,3,273,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+273,3,274,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+274,3,275,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+275,3,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+276,2,0,pTxPdu,TP_PCU *,0x24,,24,,,1,0,rwx
+277,3,278,pCData,void *,0x0,21,4,0,0,1,0,rwx
+278,3,279,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+279,3,280,Status,uint8,0x6,8,1,0,0,1,0,rwx
+280,3,281,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+281,3,282,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+282,3,283,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+283,3,284,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+284,3,285,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+285,3,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+286,1,287,FRecord_Buff,uint8 [1024],0x20000108,8,1,0,0,1,0,rwx
+287,1,288,Rec_RxBuff,uint8 [100],0x20003d6c,8,1,0,0,1,0,rwx
+288,1,289,Rec_TxBuff,uint8 [1023],0x2000396c,8,1,0,0,1,0,rwx
+289,1,299,Rec_Rx_Pcu,TP_PCU [1],0x1fff8498,,24,,,1,0,rwx
+290,2,291,pCData,void *,0x0,21,4,0,0,1,0,rwx
+291,2,292,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+292,2,293,Status,uint8,0x6,8,1,0,0,1,0,rwx
+293,2,294,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+294,2,295,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+295,2,296,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+296,2,297,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+297,2,298,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+298,2,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+299,1,309,Rec_Tx_Pcu,TP_PCU [1],0x1fff84b0,,24,,,1,0,rwx
+300,2,301,pCData,void *,0x0,21,4,0,0,1,0,rwx
+301,2,302,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+302,2,303,Status,uint8,0x6,8,1,0,0,1,0,rwx
+303,2,304,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+304,2,305,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+305,2,306,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+306,2,307,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+307,2,308,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+308,2,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+309,1,310,FRec_CheckBlank,"static BOOLEAN (void *, uint32)",0x1454c,21,,,,,,
+310,1,311,FRec_PackWrite,static BOOLEAN (uint8),0x14590,21,,,,,,
+311,1,312,FRec_GetItemNum,static uint32 (uint8),0x14cdc,21,,,,,,
+312,1,313,FRecStore_Init,BOOLEAN (void),0x14ec4,21,,,,,,
+313,1,314,FRecStore_Main,void (void),0x16034,21,,,,,,
+314,1,315,FRec_ReadPack,"BOOLEAN (uint8, uint32, void *, BOOLEAN)",0x161d8,21,,,,,,
+315,1,316,FRec_ConKickDog,void (void),0x16438,21,,,,,,
+316,1,317,Rec_App_TxIndication,void (uint16),0x164a4,21,,,,,,
+317,1,0,Rec_App_RxIndication,"void (void *, uint16)",0x166dc,21,,,,,,
+318,0,321,QTMCU_Aspcfg.c,,,19,,,,,,
+319,1,320,QT_IOInAsp_FilterLen,QTIOFILTERLEN_TYPE [2] const,0x1f2f8,7,2,0,0,1,0,rwx
+320,1,0,QT_IOOutAsp_ResetStatus,BOOLEAN [3] const,0x1f2fc,8,1,0,0,1,0,rwx
+321,0,337,Prot_SmileAspcfg.c,,,19,,,,,,
+322,1,326,Smile_ChannelCfg,CH_CONFIG [15] const,0x1f300,,20,,,1,0,rwx
+323,2,324,ChannelID,uint8,0x0,8,1,0,0,1,0,rwx
+324,2,325,pSendData,void *,0x8,21,4,0,0,1,0,rwx
+325,2,0,DataLen,uint16,0x10,7,2,0,0,1,0,rwx
+326,1,327,Send_IO_Num,"static void (uint8, uint16)",0x16a08,21,,,,,,
+327,1,328,Send_IO_InStatus,"static void (uint8, uint16)",0x16a4c,21,,,,,,
+328,1,329,Send_IO_OutStatus,"static void (uint8, uint16)",0x16a8c,21,,,,,,
+329,1,330,Send_BalaStatus,"static void (uint8, uint16)",0x16acc,21,,,,,,
+330,1,331,Recv_IO_OutStatus,"static void (uint8, uint16)",0x16b90,21,,,,,,
+331,1,332,Recv_ForceCmd,"static void (uint8, uint16)",0x16be4,21,,,,,,
+332,1,333,Recv_PBmsAlarm,"static void (uint8, uint16)",0x16c24,21,,,,,,
+333,1,334,Recv_BalaStatus,"static void (uint8, uint16)",0x16c48,21,,,,,,
+334,1,335,Recv_BmsSocs,"static void (uint8, uint16)",0x16cec,21,,,,,,
+335,1,336,Recv_FParaAlarm,"static void (uint8, uint16)",0x16d24,21,,,,,,
+336,1,0,Recv_FPara,"static void (uint8, uint16)",0x16d64,21,,,,,,
+337,0,384,PBmsAlarm_AspCfg.c,,,19,,,,,,
+338,1,342,Alarm_AspCfg,PBMS_ALRAM_CFG [20] const,0x1f42c,,28,,,1,0,rwx
+339,2,340,AlarmID,ALARM_ENUM_TYPE,0x0,20,1,0,0,1,0,rwx
+340,2,341,AlramSetDelayTime,MILLISECOND,0x14,7,4,0,0,1,0,rwx
+341,2,0,AlramClearDelayTime,MILLISECOND,0x18,7,4,0,0,1,0,rwx
+342,1,343,Epara_GetStoreAlarm,void (void),0x16da0,21,,,,,,
+343,1,344,PBmsAlarm_AspInit,void (void),0x16dac,21,,,,,,
+344,1,345,PBmsAlarm_AspMain,void (void),0x16db8,21,,,,,,
+345,1,346,AlarmI_Cfg_SetSocLow,BOOLEAN (void),0x16dc4,21,,,,,,
+346,1,347,AlarmI_Cfg_ClrSocLow,BOOLEAN (void),0x16df4,21,,,,,,
+347,1,348,AlarmI_Cfg_SetCellDiff,BOOLEAN (void),0x16e24,21,,,,,,
+348,1,349,AlarmI_Cfg_ClrCellDiff,BOOLEAN (void),0x16e54,21,,,,,,
+349,1,350,AlarmI_Cfg_SetDisTempLow,BOOLEAN (void),0x16e8c,21,,,,,,
+350,1,351,AlarmI_Cfg_ClrDisTempLow,BOOLEAN (void),0x16ec8,21,,,,,,
+351,1,352,AlarmI_Cfg_SetDisTempHigh,BOOLEAN (void),0x16efc,21,,,,,,
+352,1,353,AlarmI_Cfg_ClrDisTempHigh,BOOLEAN (void),0x16f38,21,,,,,,
+353,1,354,AlarmI_Cfg_SetDisCurHigh,BOOLEAN (void),0x16f6c,21,,,,,,
+354,1,355,AlarmI_Cfg_ClrDisCurHigh,BOOLEAN (void),0x16f98,21,,,,,,
+355,1,356,AlarmI_Cfg_SetDisCellLow,BOOLEAN (void),0x16fc8,21,,,,,,
+356,1,357,AlarmI_Cfg_ClrDisCellLow,BOOLEAN (void),0x16ff8,21,,,,,,
+357,1,358,AlarmI_Cfg_SetChgTempLow,BOOLEAN (void),0x17030,21,,,,,,
+358,1,359,AlarmI_Cfg_ClrChgTempLow,BOOLEAN (void),0x1706c,21,,,,,,
+359,1,360,AlarmI_Cfg_SetChgTempHigh,BOOLEAN (void),0x170a0,21,,,,,,
+360,1,361,AlarmI_Cfg_ClrChgTempHigh,BOOLEAN (void),0x170dc,21,,,,,,
+361,1,362,AlarmI_Cfg_SetChgCurHigh,BOOLEAN (void),0x17110,21,,,,,,
+362,1,363,AlarmI_Cfg_ClrChgCurHigh,BOOLEAN (void),0x1713c,21,,,,,,
+363,1,364,AlarmI_Cfg_SetChgCellHigh,BOOLEAN (void),0x1716c,21,,,,,,
+364,1,365,AlarmI_Cfg_ClrChgCellHigh,BOOLEAN (void),0x1719c,21,,,,,,
+365,1,366,AlarmII_Cfg_SetDisTempLow,BOOLEAN (void),0x171d4,21,,,,,,
+366,1,367,AlarmII_Cfg_ClrDisTempLow,BOOLEAN (void),0x17210,21,,,,,,
+367,1,368,AlarmII_Cfg_SetDisTempHigh,BOOLEAN (void),0x17244,21,,,,,,
+368,1,369,AlarmII_Cfg_ClrDisTempHigh,BOOLEAN (void),0x17280,21,,,,,,
+369,1,370,AlarmII_Cfg_SetDisCurHigh,BOOLEAN (void),0x172b4,21,,,,,,
+370,1,371,AlarmII_Cfg_ClrDisCurHigh,BOOLEAN (void),0x172dc,21,,,,,,
+371,1,372,AlarmII_Cfg_SetDisCellLow,BOOLEAN (void),0x17308,21,,,,,,
+372,1,373,AlarmII_Cfg_ClrDisCellLow,BOOLEAN (void),0x17338,21,,,,,,
+373,1,374,AlarmII_Cfg_SetDisShort,BOOLEAN (void),0x17370,21,,,,,,
+374,1,375,AlarmII_Cfg_SetChgTempLow,BOOLEAN (void),0x173a4,21,,,,,,
+375,1,376,AlarmII_Cfg_ClrChgTempLow,BOOLEAN (void),0x173e0,21,,,,,,
+376,1,377,AlarmII_Cfg_SetChgTempHigh,BOOLEAN (void),0x17414,21,,,,,,
+377,1,378,AlarmII_Cfg_ClrChgTempHigh,BOOLEAN (void),0x17450,21,,,,,,
+378,1,379,AlarmII_Cfg_SetChgCurHigh,BOOLEAN (void),0x17484,21,,,,,,
+379,1,380,AlarmII_Cfg_ClrChgCurHigh,BOOLEAN (void),0x174b0,21,,,,,,
+380,1,381,AlarmII_Cfg_SetChgCellHigh,BOOLEAN (void),0x174dc,21,,,,,,
+381,1,382,AlarmII_Cfg_ClrChgCellHigh,BOOLEAN (void),0x1750c,21,,,,,,
+382,1,383,AlarmII_Cfg_SetCellDiff,BOOLEAN (void),0x17544,21,,,,,,
+383,1,0,AlarmII_Cfg_ClrCellDiff,BOOLEAN (void),0x17574,21,,,,,,
+384,0,395,FRecord_Aspcfg.c,,,19,,,,,,
+385,1,386,RecBatInfo,uint8 [70],0x20003de8,8,1,0,0,1,0,rwx
+386,1,394,FRecordStoreCfg,FR_CFG_TYPE [1],0x1fff84f0,,32,,,1,0,rwx
+387,2,388,StartAddr,uint32,0x0,7,4,0,0,1,0,rwx
+388,2,389,PageSize,uint32,0x4,7,4,0,0,1,0,rwx
+389,2,390,PageNum,uint32,0x8,7,4,0,0,1,0,rwx
+390,2,391,RecordSize,uint32,0xc,7,4,0,0,1,0,rwx
+391,2,392,pSrc,void *,0x10,21,4,0,0,1,0,rwx
+392,2,393,pDstBuf,void *,0x18,21,4,0,0,1,0,rwx
+393,2,0,Cycle,uint32,0x1c,7,4,0,0,1,0,rwx
+394,1,0,fRecBatInfo,"BOOLEAN (void *, uint32)",0x175ac,21,,,,,,
+395,0,506,FParaStore_Aspcfg.c,,,19,,,,,,
+396,1,448,FPara_Public,FPARA,0x20003e30,,116,,,1,0,rwx
+397,2,398,FParaVer,uint32,0x0,7,4,0,0,1,0,rwx
+398,2,399,RatePower,POWER_Wh,0x4,7,4,0,0,1,0,rwx
+399,2,400,RatedVolt,TERMINALVOLT_01MV,0x8,7,4,0,0,1,0,rwx
+400,2,401,QmaxRate,QTYPE_001AH,0xc,7,4,0,0,1,0,rwx
+401,2,402,QmaxSet,QTYPE_001AH,0x10,7,4,0,0,1,0,rwx
+402,2,403,CellNum,uint8,0x14,8,1,0,0,1,0,rwx
+403,2,404,bCellReport,uint8 [2],0x15,8,1,0,0,1,0,rwx
+404,2,405,TempNum,uint8,0x17,8,1,0,0,1,0,rwx
+405,2,406,bTempReport,uint8 [1],0x18,8,1,0,0,1,0,rwx
+406,2,407,ShuntCalibFz,uint16,0x19,7,2,0,0,1,0,rwx
+407,2,408,ShuntCalibFm,uint16,0x1b,7,2,0,0,1,0,rwx
+408,2,409,CTVFz,uint16,0x1d,7,2,0,0,1,0,rwx
+409,2,410,CTVFm,uint16,0x1f,7,2,0,0,1,0,rwx
+410,2,411,CellLowLv1,CELLVOLT_01MV,0x21,7,2,0,0,1,0,rwx
+411,2,412,ChargeCellStopVolt,CELLVOLT_01MV,0x23,7,2,0,0,1,0,rwx
+412,2,413,LowCurVal,CURRENT_MA,0x25,5,4,0,0,1,0,rwx
+413,2,414,ZeroCurVal,CURRENT_MA,0x29,5,4,0,0,1,0,rwx
+414,2,415,BalanceStartV,CELLVOLT_01MV,0x2d,7,2,0,0,1,0,rwx
+415,2,416,BalanceStopV,CELLVOLT_01MV,0x2f,7,2,0,0,1,0,rwx
+416,2,417,BalanceDeltaV,CELLVOLT_01MV,0x31,7,2,0,0,1,0,rwx
+417,2,418,BalanceCtrlCycleTime,uint16,0x33,7,2,0,0,1,0,rwx
+418,2,419,BalanceMaxTemp,TEMPERATURE_1C,0x35,6,1,0,0,1,0,rwx
+419,2,427,Config,FPARA_CONFIG,0x36,,22,,,1,0,rwx
+420,3,421,CalibSocVolt,CELLVOLT_01MV,0x0,7,2,0,0,1,0,rwx
+421,3,422,CalibSocVal,SOCSOH_01PER,0x2,7,2,0,0,1,0,rwx
+422,3,423,CAN_Baud,uint16,0x4,7,2,0,0,1,0,rwx
+423,3,424,ChgVoltMin,TERMINALVOLT_MV,0x6,7,4,0,0,1,0,rwx
+424,3,425,ChgVoltMax,TERMINALVOLT_MV,0xa,7,4,0,0,1,0,rwx
+425,3,426,EnterChgDelay,uint32,0xe,7,4,0,0,1,0,rwx
+426,3,0,ExitChgDelay,uint32,0x12,7,4,0,0,1,0,rwx
+427,2,0,Alarm,FPARA_ALARM,0x4c,,40,,,1,0,rwx
+428,3,429,SocLowSetI,SOCSOH_01PER,0x0,7,2,0,0,1,0,rwx
+429,3,430,CellDiffSetI,CELLVOLT_01MV,0x2,7,2,0,0,1,0,rwx
+430,3,431,DisTempLowSetI,TEMPERATURE_1C,0x4,6,1,0,0,1,0,rwx
+431,3,432,DisTempHighSetI,TEMPERATURE_1C,0x5,6,1,0,0,1,0,rwx
+432,3,433,DisCurHighSetI,CURRENT_MA,0x6,5,4,0,0,1,0,rwx
+433,3,434,DisCellLowSetI,CELLVOLT_01MV,0xa,7,2,0,0,1,0,rwx
+434,3,435,ChgTempLowSetI,TEMPERATURE_1C,0xc,6,1,0,0,1,0,rwx
+435,3,436,ChgTempHighSetI,TEMPERATURE_1C,0xd,6,1,0,0,1,0,rwx
+436,3,437,ChgCurHighSetI,CURRENT_MA,0xe,5,4,0,0,1,0,rwx
+437,3,438,ChgCellHighSetI,CELLVOLT_01MV,0x12,7,2,0,0,1,0,rwx
+438,3,439,DisCurShortII,uint16,0x14,7,2,0,0,1,0,rwx
+439,3,440,DisTempLowSetII,TEMPERATURE_1C,0x16,6,1,0,0,1,0,rwx
+440,3,441,DisTempHighSetII,TEMPERATURE_1C,0x17,6,1,0,0,1,0,rwx
+441,3,442,DisCurHighSetII,CURRENT_MA,0x18,5,4,0,0,1,0,rwx
+442,3,443,DisCellLowSetII,CELLVOLT_01MV,0x1c,7,2,0,0,1,0,rwx
+443,3,444,ChgTempLowSetII,TEMPERATURE_1C,0x1e,6,1,0,0,1,0,rwx
+444,3,445,ChgTempHighSetII,TEMPERATURE_1C,0x1f,6,1,0,0,1,0,rwx
+445,3,446,ChgCurHighSetII,CURRENT_MA,0x20,5,4,0,0,1,0,rwx
+446,3,447,ChgCellHighSetII,CELLVOLT_01MV,0x24,7,2,0,0,1,0,rwx
+447,3,0,CellDiffSetII,CELLVOLT_01MV,0x26,7,2,0,0,1,0,rwx
+448,1,453,FParaStoreCfg,FP_CFG_TYPE [3] const,0x1f65c,,16,,,1,0,rwx
+449,2,450,StartAddr,uint32,0x0,7,4,0,0,1,0,rwx
+450,2,451,PageSize,uint32,0x4,7,4,0,0,1,0,rwx
+451,2,452,PageNum,uint32,0x8,7,4,0,0,1,0,rwx
+452,2,0,ParaSize,uint32,0xc,7,4,0,0,1,0,rwx
+453,1,505,p_Default_FPara,FPARA const *,0x20000528,,116,,,1,0,rwx
+454,2,455,FParaVer,uint32,0x0,7,4,0,0,1,0,rwx
+455,2,456,RatePower,POWER_Wh,0x4,7,4,0,0,1,0,rwx
+456,2,457,RatedVolt,TERMINALVOLT_01MV,0x8,7,4,0,0,1,0,rwx
+457,2,458,QmaxRate,QTYPE_001AH,0xc,7,4,0,0,1,0,rwx
+458,2,459,QmaxSet,QTYPE_001AH,0x10,7,4,0,0,1,0,rwx
+459,2,460,CellNum,uint8,0x14,8,1,0,0,1,0,rwx
+460,2,461,bCellReport,uint8 [2],0x15,8,1,0,0,1,0,rwx
+461,2,462,TempNum,uint8,0x17,8,1,0,0,1,0,rwx
+462,2,463,bTempReport,uint8 [1],0x18,8,1,0,0,1,0,rwx
+463,2,464,ShuntCalibFz,uint16,0x19,7,2,0,0,1,0,rwx
+464,2,465,ShuntCalibFm,uint16,0x1b,7,2,0,0,1,0,rwx
+465,2,466,CTVFz,uint16,0x1d,7,2,0,0,1,0,rwx
+466,2,467,CTVFm,uint16,0x1f,7,2,0,0,1,0,rwx
+467,2,468,CellLowLv1,CELLVOLT_01MV,0x21,7,2,0,0,1,0,rwx
+468,2,469,ChargeCellStopVolt,CELLVOLT_01MV,0x23,7,2,0,0,1,0,rwx
+469,2,470,LowCurVal,CURRENT_MA,0x25,5,4,0,0,1,0,rwx
+470,2,471,ZeroCurVal,CURRENT_MA,0x29,5,4,0,0,1,0,rwx
+471,2,472,BalanceStartV,CELLVOLT_01MV,0x2d,7,2,0,0,1,0,rwx
+472,2,473,BalanceStopV,CELLVOLT_01MV,0x2f,7,2,0,0,1,0,rwx
+473,2,474,BalanceDeltaV,CELLVOLT_01MV,0x31,7,2,0,0,1,0,rwx
+474,2,475,BalanceCtrlCycleTime,uint16,0x33,7,2,0,0,1,0,rwx
+475,2,476,BalanceMaxTemp,TEMPERATURE_1C,0x35,6,1,0,0,1,0,rwx
+476,2,484,Config,FPARA_CONFIG,0x36,,22,,,1,0,rwx
+477,3,478,CalibSocVolt,CELLVOLT_01MV,0x0,7,2,0,0,1,0,rwx
+478,3,479,CalibSocVal,SOCSOH_01PER,0x2,7,2,0,0,1,0,rwx
+479,3,480,CAN_Baud,uint16,0x4,7,2,0,0,1,0,rwx
+480,3,481,ChgVoltMin,TERMINALVOLT_MV,0x6,7,4,0,0,1,0,rwx
+481,3,482,ChgVoltMax,TERMINALVOLT_MV,0xa,7,4,0,0,1,0,rwx
+482,3,483,EnterChgDelay,uint32,0xe,7,4,0,0,1,0,rwx
+483,3,0,ExitChgDelay,uint32,0x12,7,4,0,0,1,0,rwx
+484,2,0,Alarm,FPARA_ALARM,0x4c,,40,,,1,0,rwx
+485,3,486,SocLowSetI,SOCSOH_01PER,0x0,7,2,0,0,1,0,rwx
+486,3,487,CellDiffSetI,CELLVOLT_01MV,0x2,7,2,0,0,1,0,rwx
+487,3,488,DisTempLowSetI,TEMPERATURE_1C,0x4,6,1,0,0,1,0,rwx
+488,3,489,DisTempHighSetI,TEMPERATURE_1C,0x5,6,1,0,0,1,0,rwx
+489,3,490,DisCurHighSetI,CURRENT_MA,0x6,5,4,0,0,1,0,rwx
+490,3,491,DisCellLowSetI,CELLVOLT_01MV,0xa,7,2,0,0,1,0,rwx
+491,3,492,ChgTempLowSetI,TEMPERATURE_1C,0xc,6,1,0,0,1,0,rwx
+492,3,493,ChgTempHighSetI,TEMPERATURE_1C,0xd,6,1,0,0,1,0,rwx
+493,3,494,ChgCurHighSetI,CURRENT_MA,0xe,5,4,0,0,1,0,rwx
+494,3,495,ChgCellHighSetI,CELLVOLT_01MV,0x12,7,2,0,0,1,0,rwx
+495,3,496,DisCurShortII,uint16,0x14,7,2,0,0,1,0,rwx
+496,3,497,DisTempLowSetII,TEMPERATURE_1C,0x16,6,1,0,0,1,0,rwx
+497,3,498,DisTempHighSetII,TEMPERATURE_1C,0x17,6,1,0,0,1,0,rwx
+498,3,499,DisCurHighSetII,CURRENT_MA,0x18,5,4,0,0,1,0,rwx
+499,3,500,DisCellLowSetII,CELLVOLT_01MV,0x1c,7,2,0,0,1,0,rwx
+500,3,501,ChgTempLowSetII,TEMPERATURE_1C,0x1e,6,1,0,0,1,0,rwx
+501,3,502,ChgTempHighSetII,TEMPERATURE_1C,0x1f,6,1,0,0,1,0,rwx
+502,3,503,ChgCurHighSetII,CURRENT_MA,0x20,5,4,0,0,1,0,rwx
+503,3,504,ChgCellHighSetII,CELLVOLT_01MV,0x24,7,2,0,0,1,0,rwx
+504,3,0,CellDiffSetII,CELLVOLT_01MV,0x26,7,2,0,0,1,0,rwx
+505,1,0,FParaStore_Init_Asp,void (void),0x175fc,21,,,,,,
+506,0,559,BatPara_PAN0.c,,,19,,,,,,
+507,1,0,FPara_AspDefaultPara_PAN0,FPARA const,0x1f68c,,116,,,1,0,rwx
+508,2,509,FParaVer,uint32,0x0,7,4,0,0,1,0,rwx
+509,2,510,RatePower,POWER_Wh,0x4,7,4,0,0,1,0,rwx
+510,2,511,RatedVolt,TERMINALVOLT_01MV,0x8,7,4,0,0,1,0,rwx
+511,2,512,QmaxRate,QTYPE_001AH,0xc,7,4,0,0,1,0,rwx
+512,2,513,QmaxSet,QTYPE_001AH,0x10,7,4,0,0,1,0,rwx
+513,2,514,CellNum,uint8,0x14,8,1,0,0,1,0,rwx
+514,2,515,bCellReport,uint8 [2],0x15,8,1,0,0,1,0,rwx
+515,2,516,TempNum,uint8,0x17,8,1,0,0,1,0,rwx
+516,2,517,bTempReport,uint8 [1],0x18,8,1,0,0,1,0,rwx
+517,2,518,ShuntCalibFz,uint16,0x19,7,2,0,0,1,0,rwx
+518,2,519,ShuntCalibFm,uint16,0x1b,7,2,0,0,1,0,rwx
+519,2,520,CTVFz,uint16,0x1d,7,2,0,0,1,0,rwx
+520,2,521,CTVFm,uint16,0x1f,7,2,0,0,1,0,rwx
+521,2,522,CellLowLv1,CELLVOLT_01MV,0x21,7,2,0,0,1,0,rwx
+522,2,523,ChargeCellStopVolt,CELLVOLT_01MV,0x23,7,2,0,0,1,0,rwx
+523,2,524,LowCurVal,CURRENT_MA,0x25,5,4,0,0,1,0,rwx
+524,2,525,ZeroCurVal,CURRENT_MA,0x29,5,4,0,0,1,0,rwx
+525,2,526,BalanceStartV,CELLVOLT_01MV,0x2d,7,2,0,0,1,0,rwx
+526,2,527,BalanceStopV,CELLVOLT_01MV,0x2f,7,2,0,0,1,0,rwx
+527,2,528,BalanceDeltaV,CELLVOLT_01MV,0x31,7,2,0,0,1,0,rwx
+528,2,529,BalanceCtrlCycleTime,uint16,0x33,7,2,0,0,1,0,rwx
+529,2,530,BalanceMaxTemp,TEMPERATURE_1C,0x35,6,1,0,0,1,0,rwx
+530,2,538,Config,FPARA_CONFIG,0x36,,22,,,1,0,rwx
+531,3,532,CalibSocVolt,CELLVOLT_01MV,0x0,7,2,0,0,1,0,rwx
+532,3,533,CalibSocVal,SOCSOH_01PER,0x2,7,2,0,0,1,0,rwx
+533,3,534,CAN_Baud,uint16,0x4,7,2,0,0,1,0,rwx
+534,3,535,ChgVoltMin,TERMINALVOLT_MV,0x6,7,4,0,0,1,0,rwx
+535,3,536,ChgVoltMax,TERMINALVOLT_MV,0xa,7,4,0,0,1,0,rwx
+536,3,537,EnterChgDelay,uint32,0xe,7,4,0,0,1,0,rwx
+537,3,0,ExitChgDelay,uint32,0x12,7,4,0,0,1,0,rwx
+538,2,0,Alarm,FPARA_ALARM,0x4c,,40,,,1,0,rwx
+539,3,540,SocLowSetI,SOCSOH_01PER,0x0,7,2,0,0,1,0,rwx
+540,3,541,CellDiffSetI,CELLVOLT_01MV,0x2,7,2,0,0,1,0,rwx
+541,3,542,DisTempLowSetI,TEMPERATURE_1C,0x4,6,1,0,0,1,0,rwx
+542,3,543,DisTempHighSetI,TEMPERATURE_1C,0x5,6,1,0,0,1,0,rwx
+543,3,544,DisCurHighSetI,CURRENT_MA,0x6,5,4,0,0,1,0,rwx
+544,3,545,DisCellLowSetI,CELLVOLT_01MV,0xa,7,2,0,0,1,0,rwx
+545,3,546,ChgTempLowSetI,TEMPERATURE_1C,0xc,6,1,0,0,1,0,rwx
+546,3,547,ChgTempHighSetI,TEMPERATURE_1C,0xd,6,1,0,0,1,0,rwx
+547,3,548,ChgCurHighSetI,CURRENT_MA,0xe,5,4,0,0,1,0,rwx
+548,3,549,ChgCellHighSetI,CELLVOLT_01MV,0x12,7,2,0,0,1,0,rwx
+549,3,550,DisCurShortII,uint16,0x14,7,2,0,0,1,0,rwx
+550,3,551,DisTempLowSetII,TEMPERATURE_1C,0x16,6,1,0,0,1,0,rwx
+551,3,552,DisTempHighSetII,TEMPERATURE_1C,0x17,6,1,0,0,1,0,rwx
+552,3,553,DisCurHighSetII,CURRENT_MA,0x18,5,4,0,0,1,0,rwx
+553,3,554,DisCellLowSetII,CELLVOLT_01MV,0x1c,7,2,0,0,1,0,rwx
+554,3,555,ChgTempLowSetII,TEMPERATURE_1C,0x1e,6,1,0,0,1,0,rwx
+555,3,556,ChgTempHighSetII,TEMPERATURE_1C,0x1f,6,1,0,0,1,0,rwx
+556,3,557,ChgCurHighSetII,CURRENT_MA,0x20,5,4,0,0,1,0,rwx
+557,3,558,ChgCellHighSetII,CELLVOLT_01MV,0x24,7,2,0,0,1,0,rwx
+558,3,0,CellDiffSetII,CELLVOLT_01MV,0x26,7,2,0,0,1,0,rwx
+559,0,564,QTSpi_BspCfg.c,,,19,,,,,,
+560,1,0,Spi_Bspcfg,SPI_BSPCFG [1] const,0x1f700,,16,,,1,0,rwx
+561,2,562,DIOID_CS,uint8,0x0,8,1,0,0,1,0,rwx
+562,2,563,bCSEnableStatus,BOOLEAN,0x1,8,1,0,0,1,0,rwx
+563,2,0,SubID,uint8,0xc,8,1,0,0,1,0,rwx
+564,0,753,QTMCU_BspCfg.c,,,19,,,,,,
+565,1,612,MCU_Spi_Table,MCU_SPI_TYPE [1] const,0x1f7c0,,64,,,1,0,rwx
+566,2,589,Spi_Base,LPSPI_Type *,0x0,,120,,,1,0,rwx
+567,3,568,VERID,uint32_t const,0x0,7,4,0,0,1,0,rwx
+568,3,569,PARAM,uint32_t const,0x4,7,4,0,0,1,0,rwx
+569,3,570,RESERVED_0,uint8_t [8],0x8,8,1,0,0,1,0,rwx
+570,3,571,CR,uint32_t,0x10,7,4,0,0,1,0,rwx
+571,3,572,SR,uint32_t,0x14,7,4,0,0,1,0,rwx
+572,3,573,IER,uint32_t,0x18,7,4,0,0,1,0,rwx
+573,3,574,DER,uint32_t,0x1c,7,4,0,0,1,0,rwx
+574,3,575,CFGR0,uint32_t,0x20,7,4,0,0,1,0,rwx
+575,3,576,CFGR1,uint32_t,0x24,7,4,0,0,1,0,rwx
+576,3,577,RESERVED_1,uint8_t [8],0x28,8,1,0,0,1,0,rwx
+577,3,578,DMR0,uint32_t,0x30,7,4,0,0,1,0,rwx
+578,3,579,DMR1,uint32_t,0x34,7,4,0,0,1,0,rwx
+579,3,580,RESERVED_2,uint8_t [8],0x38,8,1,0,0,1,0,rwx
+580,3,581,CCR,uint32_t,0x40,7,4,0,0,1,0,rwx
+581,3,582,RESERVED_3,uint8_t [20],0x44,8,1,0,0,1,0,rwx
+582,3,583,FCR,uint32_t,0x58,7,4,0,0,1,0,rwx
+583,3,584,FSR,uint32_t const,0x5c,7,4,0,0,1,0,rwx
+584,3,585,TCR,uint32_t,0x60,7,4,0,0,1,0,rwx
+585,3,586,TDR,uint32_t,0x64,7,4,0,0,1,0,rwx
+586,3,587,RESERVED_4,uint8_t [8],0x68,8,1,0,0,1,0,rwx
+587,3,588,RSR,uint32_t const,0x70,7,4,0,0,1,0,rwx
+588,3,0,RDR,uint32_t const,0x74,7,4,0,0,1,0,rwx
+589,2,602,GPIO_AltCfg, [4],0x4,,12,,,1,0,rwx
+590,3,600,PORT_Base,PORT_Type *,0x0,,204,,,1,0,rwx
+591,4,592,PCR,uint32_t [32],0x0,7,4,0,0,1,0,rwx
+592,4,593,GPCLR,uint32_t,0x80,7,4,0,0,1,0,rwx
+593,4,594,GPCHR,uint32_t,0x84,7,4,0,0,1,0,rwx
+594,4,595,RESERVED_0,uint8_t [24],0x88,8,1,0,0,1,0,rwx
+595,4,596,ISFR,uint32_t,0xa0,7,4,0,0,1,0,rwx
+596,4,597,RESERVED_1,uint8_t [28],0xa4,8,1,0,0,1,0,rwx
+597,4,598,DFER,uint32_t,0xc0,7,4,0,0,1,0,rwx
+598,4,599,DFCR,uint32_t,0xc4,7,4,0,0,1,0,rwx
+599,4,0,DFWR,uint32_t,0xc8,7,4,0,0,1,0,rwx
+600,3,601,GPIO_Pin,uint32,0x4,7,4,0,0,1,0,rwx
+601,3,0,Altnum,uint8,0x8,8,1,0,0,1,0,rwx
+602,2,603,bManuslPCS,BOOLEAN,0x34,8,1,0,0,1,0,rwx
+603,2,604,PCC_Index,uint8,0x35,8,1,0,0,1,0,rwx
+604,2,605,Pcs_Num,uint8,0x36,8,1,0,0,1,0,rwx
+605,2,606,Pcs_Polarity,uint8,0x37,8,1,0,0,1,0,rwx
+606,2,607,PreScale,uint8,0x38,8,1,0,0,1,0,rwx
+607,2,608,Sck_Div,uint8,0x39,8,1,0,0,1,0,rwx
+608,2,609,Framesize,uint8,0x3a,8,1,0,0,1,0,rwx
+609,2,610,Clock_Polarity,uint8,0x3b,8,1,0,0,1,0,rwx
+610,2,611,Clock_Phase,uint8,0x3c,8,1,0,0,1,0,rwx
+611,2,0,Delay_OVT,uint16,0x3e,7,2,0,0,1,0,rwx
+612,1,689,Mcu_Can_Bspcfg,MCU_CAN_CONFIG [1] const,0x1f800,,164,,,1,0,rwx
+613,2,659,Can_Base,CAN_Type *,0x0,,3084,,,1,0,rwx
+614,3,615,MCR,uint32_t,0x0,7,4,0,0,1,0,rwx
+615,3,616,CTRL1,uint32_t,0x4,7,4,0,0,1,0,rwx
+616,3,617,TIMER,uint32_t,0x8,7,4,0,0,1,0,rwx
+617,3,618,RESERVED_0,uint8_t [4],0xc,8,1,0,0,1,0,rwx
+618,3,619,RXMGMASK,uint32_t,0x10,7,4,0,0,1,0,rwx
+619,3,620,RX14MASK,uint32_t,0x14,7,4,0,0,1,0,rwx
+620,3,621,RX15MASK,uint32_t,0x18,7,4,0,0,1,0,rwx
+621,3,622,ECR,uint32_t,0x1c,7,4,0,0,1,0,rwx
+622,3,623,ESR1,uint32_t,0x20,7,4,0,0,1,0,rwx
+623,3,624,RESERVED_1,uint8_t [4],0x24,8,1,0,0,1,0,rwx
+624,3,625,IMASK1,uint32_t,0x28,7,4,0,0,1,0,rwx
+625,3,626,RESERVED_2,uint8_t [4],0x2c,8,1,0,0,1,0,rwx
+626,3,627,IFLAG1,uint32_t,0x30,7,4,0,0,1,0,rwx
+627,3,628,CTRL2,uint32_t,0x34,7,4,0,0,1,0,rwx
+628,3,629,ESR2,uint32_t const,0x38,7,4,0,0,1,0,rwx
+629,3,630,RESERVED_3,uint8_t [8],0x3c,8,1,0,0,1,0,rwx
+630,3,631,CRCR,uint32_t const,0x44,7,4,0,0,1,0,rwx
+631,3,632,RXFGMASK,uint32_t,0x48,7,4,0,0,1,0,rwx
+632,3,633,RXFIR,uint32_t const,0x4c,7,4,0,0,1,0,rwx
+633,3,634,CBT,uint32_t,0x50,7,4,0,0,1,0,rwx
+634,3,635,RESERVED_4,uint8_t [44],0x54,8,1,0,0,1,0,rwx
+635,3,636,RAMn,uint32_t [128],0x80,7,4,0,0,1,0,rwx
+636,3,637,RESERVED_5,uint8_t [1536],0x280,8,1,0,0,1,0,rwx
+637,3,638,RXIMR,uint32_t [16],0x880,7,4,0,0,1,0,rwx
+638,3,639,RESERVED_6,uint8_t [576],0x8c0,8,1,0,0,1,0,rwx
+639,3,640,CTRL1_PN,uint32_t,0xb00,7,4,0,0,1,0,rwx
+640,3,641,CTRL2_PN,uint32_t,0xb04,7,4,0,0,1,0,rwx
+641,3,642,WU_MTC,uint32_t,0xb08,7,4,0,0,1,0,rwx
+642,3,643,FLT_ID1,uint32_t,0xb0c,7,4,0,0,1,0,rwx
+643,3,644,FLT_DLC,uint32_t,0xb10,7,4,0,0,1,0,rwx
+644,3,645,PL1_LO,uint32_t,0xb14,7,4,0,0,1,0,rwx
+645,3,646,PL1_HI,uint32_t,0xb18,7,4,0,0,1,0,rwx
+646,3,647,FLT_ID2_IDMASK,uint32_t,0xb1c,7,4,0,0,1,0,rwx
+647,3,648,PL2_PLMASK_LO,uint32_t,0xb20,7,4,0,0,1,0,rwx
+648,3,649,PL2_PLMASK_HI,uint32_t,0xb24,7,4,0,0,1,0,rwx
+649,3,650,RESERVED_7,uint8_t [24],0xb28,8,1,0,0,1,0,rwx
+650,3,655,WMB, [4],0xb40,,16,,,1,0,rwx
+651,4,652,WMBn_CS,uint32_t const,0x0,7,4,0,0,1,0,rwx
+652,4,653,WMBn_ID,uint32_t const,0x4,7,4,0,0,1,0,rwx
+653,4,654,WMBn_D03,uint32_t const,0x8,7,4,0,0,1,0,rwx
+654,4,0,WMBn_D47,uint32_t const,0xc,7,4,0,0,1,0,rwx
+655,3,656,RESERVED_8,uint8_t [128],0xb80,8,1,0,0,1,0,rwx
+656,3,657,FDCTRL,uint32_t,0xc00,7,4,0,0,1,0,rwx
+657,3,658,FDCBT,uint32_t,0xc04,7,4,0,0,1,0,rwx
+658,3,0,FDCRC,uint32_t const,0xc08,7,4,0,0,1,0,rwx
+659,2,672,GPIO_AltCfg, [2],0x4,,12,,,1,0,rwx
+660,3,670,PORT_Base,PORT_Type *,0x0,,204,,,1,0,rwx
+661,4,662,PCR,uint32_t [32],0x0,7,4,0,0,1,0,rwx
+662,4,663,GPCLR,uint32_t,0x80,7,4,0,0,1,0,rwx
+663,4,664,GPCHR,uint32_t,0x84,7,4,0,0,1,0,rwx
+664,4,665,RESERVED_0,uint8_t [24],0x88,8,1,0,0,1,0,rwx
+665,4,666,ISFR,uint32_t,0xa0,7,4,0,0,1,0,rwx
+666,4,667,RESERVED_1,uint8_t [28],0xa4,8,1,0,0,1,0,rwx
+667,4,668,DFER,uint32_t,0xc0,7,4,0,0,1,0,rwx
+668,4,669,DFCR,uint32_t,0xc4,7,4,0,0,1,0,rwx
+669,4,0,DFWR,uint32_t,0xc8,7,4,0,0,1,0,rwx
+670,3,671,GPIO_Pin,uint32,0x4,7,4,0,0,1,0,rwx
+671,3,0,Altnum,uint8,0x8,8,1,0,0,1,0,rwx
+672,2,673,PCC_Index,uint8,0x1c,8,1,0,0,1,0,rwx
+673,2,674,MBnTotal,uint8,0x1d,8,1,0,0,1,0,rwx
+674,2,675,PROPSEG,uint8,0x1e,8,1,0,0,1,0,rwx
+675,2,676,PSEG1,uint8,0x1f,8,1,0,0,1,0,rwx
+676,2,677,PSEG2,uint8,0x20,8,1,0,0,1,0,rwx
+677,2,678,PRESDIV,uint8,0x21,8,1,0,0,1,0,rwx
+678,2,679,RJW,uint8,0x22,8,1,0,0,1,0,rwx
+679,2,680,RxIRQn,IRQn_Type,0x23,20,1,0,0,1,0,rwx
+680,2,688,Union,,0x24,,8,,,1,0,rwx
+681,3,682,U32Item0,uint32,0x0,7,4,0,0,1,0,rwx
+682,3,683,U32Item1,uint32,0x0,7,4,0,0,1,0,rwx
+683,3,0,StructItem,,0x0,,8,,,1,0,rwx
+684,4,685,A,uint32,0x0,7,4,7,25,1,0,rwx
+685,4,686,B,uint32,0x0,7,4,11,14,1,0,rwx
+686,4,687,C,uint32,0x4,7,4,16,16,1,0,rwx
+687,4,0,D,uint32,0x4,7,4,12,4,1,0,rwx
+688,2,0,TestB,uint8 [2][3][4][5],0x2c,8,1,0,0,1,0,rwx
+689,1,710,MCU_IOIn_Table,MCU_IOIN_TYPE [2] const,0x1f710,,16,,,1,0,rwx
+690,2,700,PORT_Base,PORT_Type *,0x0,,204,,,1,0,rwx
+691,3,692,PCR,uint32_t [32],0x0,7,4,0,0,1,0,rwx
+692,3,693,GPCLR,uint32_t,0x80,7,4,0,0,1,0,rwx
+693,3,694,GPCHR,uint32_t,0x84,7,4,0,0,1,0,rwx
+694,3,695,RESERVED_0,uint8_t [24],0x88,8,1,0,0,1,0,rwx
+695,3,696,ISFR,uint32_t,0xa0,7,4,0,0,1,0,rwx
+696,3,697,RESERVED_1,uint8_t [28],0xa4,8,1,0,0,1,0,rwx
+697,3,698,DFER,uint32_t,0xc0,7,4,0,0,1,0,rwx
+698,3,699,DFCR,uint32_t,0xc4,7,4,0,0,1,0,rwx
+699,3,0,DFWR,uint32_t,0xc8,7,4,0,0,1,0,rwx
+700,2,708,GPIO_Base,GPIO_Type *,0x4,,28,,,1,0,rwx
+701,3,702,PDOR,uint32_t,0x0,7,4,0,0,1,0,rwx
+702,3,703,PSOR,uint32_t,0x4,7,4,0,0,1,0,rwx
+703,3,704,PCOR,uint32_t,0x8,7,4,0,0,1,0,rwx
+704,3,705,PTOR,uint32_t,0xc,7,4,0,0,1,0,rwx
+705,3,706,PDIR,uint32_t const,0x10,7,4,0,0,1,0,rwx
+706,3,707,PDDR,uint32_t,0x14,7,4,0,0,1,0,rwx
+707,3,0,PIDR,uint32_t,0x18,7,4,0,0,1,0,rwx
+708,2,709,GPIO_Pin,uint32,0x8,7,4,0,0,1,0,rwx
+709,2,0,GPIO_ValFlip,BOOLEAN,0xc,8,1,0,0,1,0,rwx
+710,1,731,MCU_IOOut_Table,MCU_IOOUT_TYPE [3] const,0x1f730,,16,,,1,0,rwx
+711,2,721,PORT_Base,PORT_Type *,0x0,,204,,,1,0,rwx
+712,3,713,PCR,uint32_t [32],0x0,7,4,0,0,1,0,rwx
+713,3,714,GPCLR,uint32_t,0x80,7,4,0,0,1,0,rwx
+714,3,715,GPCHR,uint32_t,0x84,7,4,0,0,1,0,rwx
+715,3,716,RESERVED_0,uint8_t [24],0x88,8,1,0,0,1,0,rwx
+716,3,717,ISFR,uint32_t,0xa0,7,4,0,0,1,0,rwx
+717,3,718,RESERVED_1,uint8_t [28],0xa4,8,1,0,0,1,0,rwx
+718,3,719,DFER,uint32_t,0xc0,7,4,0,0,1,0,rwx
+719,3,720,DFCR,uint32_t,0xc4,7,4,0,0,1,0,rwx
+720,3,0,DFWR,uint32_t,0xc8,7,4,0,0,1,0,rwx
+721,2,729,GPIO_Base,GPIO_Type *,0x4,,28,,,1,0,rwx
+722,3,723,PDOR,uint32_t,0x0,7,4,0,0,1,0,rwx
+723,3,724,PSOR,uint32_t,0x4,7,4,0,0,1,0,rwx
+724,3,725,PCOR,uint32_t,0x8,7,4,0,0,1,0,rwx
+725,3,726,PTOR,uint32_t,0xc,7,4,0,0,1,0,rwx
+726,3,727,PDIR,uint32_t const,0x10,7,4,0,0,1,0,rwx
+727,3,728,PDDR,uint32_t,0x14,7,4,0,0,1,0,rwx
+728,3,0,PIDR,uint32_t,0x18,7,4,0,0,1,0,rwx
+729,2,730,GPIO_Pin,uint32,0x8,7,4,0,0,1,0,rwx
+730,2,0,GPIO_ValFlip,BOOLEAN,0xc,8,1,0,0,1,0,rwx
+731,1,752,MCU_DIO_Table,MCU_DIO_TYPE [6] const,0x1f760,,16,,,1,0,rwx
+732,2,742,PORT_Base,PORT_Type *,0x0,,204,,,1,0,rwx
+733,3,734,PCR,uint32_t [32],0x0,7,4,0,0,1,0,rwx
+734,3,735,GPCLR,uint32_t,0x80,7,4,0,0,1,0,rwx
+735,3,736,GPCHR,uint32_t,0x84,7,4,0,0,1,0,rwx
+736,3,737,RESERVED_0,uint8_t [24],0x88,8,1,0,0,1,0,rwx
+737,3,738,ISFR,uint32_t,0xa0,7,4,0,0,1,0,rwx
+738,3,739,RESERVED_1,uint8_t [28],0xa4,8,1,0,0,1,0,rwx
+739,3,740,DFER,uint32_t,0xc0,7,4,0,0,1,0,rwx
+740,3,741,DFCR,uint32_t,0xc4,7,4,0,0,1,0,rwx
+741,3,0,DFWR,uint32_t,0xc8,7,4,0,0,1,0,rwx
+742,2,750,GPIO_Base,GPIO_Type *,0x4,,28,,,1,0,rwx
+743,3,744,PDOR,uint32_t,0x0,7,4,0,0,1,0,rwx
+744,3,745,PSOR,uint32_t,0x4,7,4,0,0,1,0,rwx
+745,3,746,PCOR,uint32_t,0x8,7,4,0,0,1,0,rwx
+746,3,747,PTOR,uint32_t,0xc,7,4,0,0,1,0,rwx
+747,3,748,PDIR,uint32_t const,0x10,7,4,0,0,1,0,rwx
+748,3,749,PDDR,uint32_t,0x14,7,4,0,0,1,0,rwx
+749,3,0,PIDR,uint32_t,0x18,7,4,0,0,1,0,rwx
+750,2,751,GPIO_Pin,uint32,0x8,7,4,0,0,1,0,rwx
+751,2,0,GPIO_ValFlip,BOOLEAN,0xc,8,1,0,0,1,0,rwx
+752,1,0,MCU_CAN_bEnTransceiver,"BOOLEAN (uint8, BOOLEAN)",0x1766c,21,,,,,,
+753,0,758,QTCan_Bspcfg.c,,,19,,,,,,
+754,1,757,Can_Bspcfg,CAN_BSPCFG [1] const,0x1f8a4,,32,,,1,0,rwx
+755,2,756,SubID,uint8,0x1c,8,1,0,0,1,0,rwx
+756,2,0,BuffID,uint8,0x1d,8,1,0,0,1,0,rwx
+757,1,0,QTCan_Trans_Recvmsg,"void (uint8, CanMsg)",0x17690,21,,,,,,
+758,0,765,Cur_Bspcfg.c,,,19,,,,,,
+759,1,761,Cur_Bspcfg,CURRENT_BSPCFG [1] const,0x1f8c4,,16,,,1,0,rwx
+760,2,0,SubID,uint8,0xc,8,1,0,0,1,0,rwx
+761,1,762,CurRes_Init,void (uint8),0x176ac,21,,,,,,
+762,1,763,CurRes_Main,"void (uint8, void *)",0x176d4,21,,,,,,
+763,1,764,CurFromMaster_SetCurrentI,void (uint8),0x177cc,21,,,,,,
+764,1,0,DataFilter,"int32 (uint8, int32)",0x17800,21,,,,,,
+765,0,767,BmsSample_Bspcfg.c,,,19,,,,,,
+766,1,0,BmsSample_BspSetCellVolt,"void (CELLVOLT_01MV, CELLVOLT_01MV, CELLVOLT_01MV, TEMPERATURE_1C)",0x178e0,21,,,,,,
+767,0,770,BmsBalance_BspCfg.c,,,19,,,,,,
+768,1,769,BmsBalance_BspCfgInit,void (void),0x179fc,21,,,,,,
+769,1,0,Balance_Temp_Secure,"BOOLEAN (uint8, TEMPERATURE_1C)",0x17a08,21,,,,,,
+770,0,777,AN49503A_BspCfg.c,,,19,,,,,,
+771,1,772,AN49503A_BspInit,void (void),0x17a40,21,,,,,,
+772,1,773,AN49503A_BspSetSHDN,void (BOOLEAN),0x17a90,21,,,,,,
+773,1,774,AN49503A_BspSetVPC,void (BOOLEAN),0x17ab8,21,,,,,,
+774,1,775,AN49503A_BspSetFETOFF,void (BOOLEAN),0x17ae0,21,,,,,,
+775,1,776,AN49503A_BspSetSTB,void (BOOLEAN),0x17b08,21,,,,,,
+776,1,0,AN49503A_BspGetNRST,BOOLEAN (void),0x17b30,21,,,,,,
+777,0,789,Unit_AN49503A.c,,,19,,,,,,
+778,1,779,AN49503A_UnlockReg,static BOOLEAN (void),0x17b40,21,,,,,,
+779,1,780,AN49503A_LockReg,static BOOLEAN (void),0x17b7c,21,,,,,,
+780,1,781,AN49503A_GetLockReg,static uint16 (void),0x17bb8,21,,,,,,
+781,1,782,Unit_AN49503A_Init,LLD_TYPE (void),0x17be0,21,,,,,,
+782,1,783,Unit_AN49503A_ReadVolt,"LLD_TYPE (CELLVOLT_01MV, CELLVOLT_01MV, int32, TERMINALVOLT_MV, CELLVOLT_01MV)",0x17d80,21,,,,,,
+783,1,784,Unit_AN49503A_SetFET,"LLD_TYPE (uint8, BOOLEAN)",0x181dc,21,,,,,,
+784,1,785,Unit_AN49503A_SetGPOH,"LLD_TYPE (uint8, BOOLEAN)",0x18280,21,,,,,,
+785,1,786,Unit_AN49503A_SetDDC,LLD_TYPE (uint16),0x1832c,21,,,,,,
+786,1,787,Unit_AN49503A_SetSamplingDDC,LLD_TYPE (BOOLEAN),0x183dc,21,,,,,,
+787,1,788,Unit_AN49503A_GetCurrentAlarm,LLD_TYPE (uint8),0x18400,21,,,,,,
+788,1,0,Unit_AN49503A_ClrCurrentAlarm,LLD_TYPE (void),0x1847c,21,,,,,,
+789,0,822,QTMCU_Bsp.c,,,19,,,,,,
+790,1,791,MCU_IOIn_BspInit,BOOLEAN (void),0x184c8,21,,,,,,
+791,1,792,MCU_IOIn_BspGet,BOOLEAN (uint8),0x18554,21,,,,,,
+792,1,793,MCU_IOOut_BspInit,BOOLEAN (void),0x185ac,21,,,,,,
+793,1,794,MCU_IOOut_BspSet,"void (uint8, BOOLEAN)",0x18634,21,,,,,,
+794,1,795,QT_DIO_SetDir,"void (uint8, BOOLEAN)",0x18694,21,,,,,,
+795,1,796,QT_DIO_GetStatus,BOOLEAN (uint8),0x18734,21,,,,,,
+796,1,797,QT_DIO_SetStatus,"void (uint8, BOOLEAN)",0x1878c,21,,,,,,
+797,1,798,MCU_SPI_Init,BOOLEAN (uint8),0x187ec,21,,,,,,
+798,1,799,MCU_SPI_TXRX,"uint32 (uint8, uint32)",0x189cc,21,,,,,,
+799,1,800,MCU_Can_Receive,"BOOLEAN (uint8, uint8, CanMsg)",0x18a80,21,,,,,,
+800,1,801,CAN0_ORed_0_15_MB_IRQHandler,void (void),0x18b9c,21,,,,,,
+801,1,802,CAN1_ORed_0_15_MB_IRQHandler,void (void),0x18bac,21,,,,,,
+802,1,803,CAN2_ORed_0_15_MB_IRQHandler,void (void),0x18bbc,21,,,,,,
+803,1,804,MCU_Can_Init,BOOLEAN (uint8),0x18bcc,21,,,,,,
+804,1,805,MCU_Can_SendMsg,"BOOLEAN (uint8, CanMsg)",0x18f3c,21,,,,,,
+805,1,806,MCU_Can_Reset,BOOLEAN (uint8),0x190bc,21,,,,,,
+806,1,807,MCU_Can_EnableIntv,void (uint8),0x190d8,21,,,,,,
+807,1,808,MCU_Can_DisableIntv,void (uint8),0x19114,21,,,,,,
+808,1,809,LPIT0_Ch0_IRQHandler,void (void),0x19150,21,,,,,,
+809,1,810,MCU_Timer_EnableInt,void (void),0x19174,21,,,,,,
+810,1,811,MCU_Timer_Init,"BOOLEAN (MILLISECOND, FUNC_VOID_VOID)",0x19190,21,,,,,,
+811,1,812,MCU_Timer_Start,void (void),0x1923c,21,,,,,,
+812,1,813,MCU_Flash_Init,BOOLEAN (void),0x19254,21,,,,,,
+813,1,814,MCU_Flash_GetData,"BOOLEAN (uint32, void *, uint16)",0x19298,21,,,,,,
+814,1,815,FLASH_Program,"void (uint32, uint32, uint8)",0x192cc,21,,,,,,
+815,1,816,MCU_Flash_SetData,"BOOLEAN (uint32, void *, uint16)",0x19390,21,,,,,,
+816,1,817,MCU_Flash_EraseSector,"BOOLEAN (uint32, uint32)",0x19414,21,,,,,,
+817,1,818,MCU_Flash_ErasebFinished,BOOLEAN (void),0x19490,21,,,,,,
+818,1,819,MCU_Init,BOOLEAN (void),0x194a0,21,,,,,,
+819,1,820,MCU_KickDog,void (void),0x195f4,21,,,,,,
+820,1,821,MCU_DisableInterrupt,void (void),0x19600,21,,,,,,
+821,1,0,MCU_EnableInterrupt,void (void),0x19610,21,,,,,,
+822,0,836,QTMCU.c,,,19,,,,,,
+823,1,828,QT_IO_Status,QT_IO_STATUS,0x20003ea4,,4,,,1,0,rwx
+824,2,825,IOIn_Status,QT_IOIN_FLAG,0x0,8,1,0,0,1,0,rwx
+825,2,826,IOIn_Ready,QT_IOIN_FLAG,0x1,8,1,0,0,1,0,rwx
+826,2,827,IOOut_Status,QT_IOOUT_FLAG,0x2,8,1,0,0,1,0,rwx
+827,2,0,IOOut_Ready,QT_IOOUT_FLAG,0x3,8,1,0,0,1,0,rwx
+828,1,829,QT_IOIn_StatusBuff,QT_IOIN_FLAG,0x20003ea8,8,1,0,0,1,0,rwx
+829,1,830,QT_IO_Init,BOOLEAN (void),0x19620,21,,,,,,
+830,1,831,QT_IO_Main,void (void),0x196a0,21,,,,,,
+831,1,832,QT_IOIn_ReadStatus,BOOLEAN (uint8),0x196b0,21,,,,,,
+832,1,833,QT_IOIn_Handler,void (void),0x196f0,21,,,,,,
+833,1,834,QT_IOOut_ReadStatus,BOOLEAN (uint8),0x19808,21,,,,,,
+834,1,835,QT_IOOut_WriteStatus,"void (uint8, BOOLEAN)",0x19848,21,,,,,,
+835,1,0,QT_IOOut_Handler,void (void),0x198f4,21,,,,,,
+836,0,847,Hal_AN49503A.c,,,19,,,,,,
+837,1,838,CRC_Calc_AN49503A,"static uint8 (uint8, uint8)",0x19968,21,,,,,,
+838,1,839,Hal_AN49503A_DrvInit,void (void),0x199b8,21,,,,,,
+839,1,840,Hal_AN49503A_SetSHDN,void (BOOLEAN),0x199c8,21,,,,,,
+840,1,841,Hal_AN49503A_SetVPC,void (BOOLEAN),0x199e0,21,,,,,,
+841,1,842,Hal_AN49503A_SetFETOFF,void (BOOLEAN),0x199f8,21,,,,,,
+842,1,843,Hal_AN49503A_SetSTB,void (BOOLEAN),0x19a10,21,,,,,,
+843,1,844,Hal_AN49503A_GetNRST,BOOLEAN (void),0x19a28,21,,,,,,
+844,1,845,Hal_AN49503A_WriteReg,"BOOLEAN (uint8, uint16)",0x19a38,21,,,,,,
+845,1,846,Hal_AN49503A_SingleReadReg,"BOOLEAN (uint8, uint16)",0x19ad4,21,,,,,,
+846,1,0,Hal_AN49503A_MultiReadReg,"BOOLEAN (uint8, uint16, uint8)",0x19bac,21,,,,,,
+847,0,858,TempConvert.c,,,19,,,,,,
+848,1,853,TempConvert_Table,TEMP_TABLE [4] const,0x203e4,,8,,,1,0,rwx
+849,2,850,MinTemp,int8,0x0,6,1,0,0,1,0,rwx
+850,2,851,MaxTemp,int8,0x1,6,1,0,0,1,0,rwx
+851,2,852,TableLen,uint8,0x2,8,1,0,0,1,0,rwx
+852,2,0,pTable,uint32 const *,0x4,7,4,0,0,1,0,rwx
+853,1,854,VISHAY_TempTable,uint32 [166] const,0x1f9d4,7,4,0,0,1,0,rwx
+854,1,855,BONAIRE_TempTable,uint32 [146] const,0x1fc6c,7,4,0,0,1,0,rwx
+855,1,856,TDK_TempTable,uint32 [166] const,0x1feb4,7,4,0,0,1,0,rwx
+856,1,857,AGV_TempTable,uint32 [166] const,0x2014c,7,4,0,0,1,0,rwx
+857,1,0,TempConvert_ConverTemp,"TEMPERATURE_1C (uint32, uint8)",0x19d1c,21,,,,,,
+858,0,869,SampleFilter.c,,,19,,,,,,
+859,1,860,Sample_CellFilter,CELLVOLT_01MV [5][16],0x20003eac,7,2,0,0,1,0,rwx
+860,1,861,Sample_CellFilter_CurPos,uint8 [16],0x20000644,8,1,0,0,1,0,rwx
+861,1,862,Sample_CellFilter_Over,uint8,0x20000654,8,1,0,0,1,0,rwx
+862,1,863,Sample_TempFilter,TEMPERATURE_1C [5][5],0x20003f4c,6,1,0,0,1,0,rwx
+863,1,864,Sample_TempFilter_CurPos,uint8 [5],0x20000658,8,1,0,0,1,0,rwx
+864,1,865,Sample_TempFilter_Over,uint8,0x2000065d,8,1,0,0,1,0,rwx
+865,1,866,Sample_CellFilter_SetVolt,void (CELLVOLT_01MV),0x19e88,21,,,,,,
+866,1,867,Sample_CellFilter_GetVolt,void (CELLVOLT_01MV),0x19f20,21,,,,,,
+867,1,868,Sample_TempFilter_SetTemp,void (TEMPERATURE_1C),0x1a0a0,21,,,,,,
+868,1,0,Sample_TempFilter_GetTemp,void (TEMPERATURE_1C),0x1a13c,21,,,,,,
+869,0,891,QtOS.c,,,19,,,,,,
+870,1,871,QTOS_LockTimes,uint8,0x2000065e,8,1,0,0,1,0,rwx
+871,1,872,Qtos_CurThreadType,QTOS_THREAD_TYPE,0x2000065f,20,1,0,0,1,0,rwx
+872,1,873,Qtos_CurThreadHandle,QTOS_hThreadHandle,0x1fff8511,8,1,0,0,1,0,rwx
+873,1,879,Qtos_ThreadDB,QTOS_THREAD_DB [12],0x20003f68,,24,,,1,0,rwx
+874,2,875,bEnable,BOOLEAN,0x0,8,1,0,0,1,0,rwx
+875,2,876,bDelayFlag,BOOLEAN,0x8,8,1,0,0,1,0,rwx
+876,2,877,msDelayTime,MILLISECOND,0xc,7,4,0,0,1,0,rwx
+877,2,878,CycleStartTime,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+878,2,0,CycleTime,MILLISECOND,0x14,7,4,0,0,1,0,rwx
+879,1,885,Qtos_RealThreadDB,QTOS_THREAD_DB [3],0x20004088,,24,,,1,0,rwx
+880,2,881,bEnable,BOOLEAN,0x0,8,1,0,0,1,0,rwx
+881,2,882,bDelayFlag,BOOLEAN,0x8,8,1,0,0,1,0,rwx
+882,2,883,msDelayTime,MILLISECOND,0xc,7,4,0,0,1,0,rwx
+883,2,884,CycleStartTime,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+884,2,0,CycleTime,MILLISECOND,0x14,7,4,0,0,1,0,rwx
+885,1,886,QTOS_Lock,void (void),0x1a2f0,21,,,,,,
+886,1,887,QTOS_Unlock,void (void),0x1a318,21,,,,,,
+887,1,888,QTOS_Init,void (void),0x1a34c,21,,,,,,
+888,1,889,QTOS_SysMain,void (void),0x1a440,21,,,,,,
+889,1,890,QTOS_CreateNormalThread,"QTOS_hThreadHandle (QTOS_THREADPROC, MILLISECOND)",0x1a5d0,21,,,,,,
+890,1,0,QTOS_CreateRealtimeThread,"QTOS_hThreadHandle (QTOS_THREADPROC, MILLISECOND)",0x1a68c,21,,,,,,
+891,0,910,QTTimer.c,,,19,,,,,,
+892,1,898,IR_Tim_Struct,TIM_STRUCT const *,0x1fff8514,,17,,,1,0,rwx
+893,2,894,IntvTime,MILLISECOND,0x0,7,4,0,0,1,0,rwx
+894,2,895,IntvTimeOver,MICROSECOND,0x4,7,4,0,0,1,0,rwx
+895,2,896,SystemMs,MILLISECOND,0x8,7,4,0,0,1,0,rwx
+896,2,897,AbsoluteTime,SECOND,0xc,7,4,0,0,1,0,rwx
+897,2,0,AbsoluteValid,BOOLEAN,0x10,8,1,0,0,1,0,rwx
+898,1,904,Tim_Struct,TIM_STRUCT,0x200040d0,,17,,,1,0,rwx
+899,2,900,IntvTime,MILLISECOND,0x0,7,4,0,0,1,0,rwx
+900,2,901,IntvTimeOver,MICROSECOND,0x4,7,4,0,0,1,0,rwx
+901,2,902,SystemMs,MILLISECOND,0x8,7,4,0,0,1,0,rwx
+902,2,903,AbsoluteTime,SECOND,0xc,7,4,0,0,1,0,rwx
+903,2,0,AbsoluteValid,BOOLEAN,0x10,8,1,0,0,1,0,rwx
+904,1,905,Tim_Intv_Callback,void (void),0x1a748,21,,,,,,
+905,1,906,Tim_OS_CallBack,void (void),0x1a798,21,,,,,,
+906,1,907,Tim_InitTimer,void (MILLISECOND),0x1a850,21,,,,,,
+907,1,908,Tim_GetCurrentTime,MILLISECOND (void),0x1a8a8,21,,,,,,
+908,1,909,Tim_CheckTimeOut,"BOOLEAN (MILLISECOND, MILLISECOND, MILLISECOND)",0x1a8d0,21,,,,,,
+909,1,0,Tim_CalIntervalTime,"MILLISECOND (MILLISECOND, MILLISECOND)",0x1a930,21,,,,,,
+910,0,915,QTSpi.c,,,19,,,,,,
+911,1,912,QT_SPI_Init,BOOLEAN (uint8),0x1a95c,21,,,,,,
+912,1,913,QT_SPI_TXRX,"uint32 (uint8, uint32)",0x1a9c4,21,,,,,,
+913,1,914,QT_SPI_CSEnable,void (uint8),0x1aa08,21,,,,,,
+914,1,0,QT_SPI_CSDisable,void (uint8),0x1aa48,21,,,,,,
+915,0,938,QTCan.c,,,19,,,,,,
+916,1,923,CanSendBuffInfo,CANSENDBUFINFO [1],0x200040e4,,12,,,1,0,rwx
+917,2,918,bPhyErr,uint8,0x0,8,1,0,0,1,0,rwx
+918,2,919,BuffLen,uint16,0x2,7,2,0,0,1,0,rwx
+919,2,920,ContinueSuccFramNum,uint8 [1],0x4,8,1,0,0,1,0,rwx
+920,2,921,ContinueErrFramNum,uint8 [1],0x5,8,1,0,0,1,0,rwx
+921,2,922,ReinitCountDelay,uint8 [1],0x6,8,1,0,0,1,0,rwx
+922,2,0,ReinitTime,MILLISECOND [1],0x8,7,4,0,0,1,0,rwx
+923,1,924,QT_Can_Lock,void (void),0x1aa90,21,,,,,,
+924,1,925,QT_Can_UnLock,void (void),0x1aad0,21,,,,,,
+925,1,926,CanBuff_Set,"void (uint8, CanMsg)",0x1ab10,21,,,,,,
+926,1,927,CanBuff_Get,CANSENDRECVBUFF (void),0x1abc0,21,,,,,,
+927,1,928,CanBuff_Clear,void (void),0x1abfc,21,,,,,,
+928,1,929,CanSendBuff_Set,"BOOLEAN (uint8, CanMsg, uint8)",0x1ac30,21,,,,,,
+929,1,930,CanSendBuff_Get,CANSENDRECVBUFF (uint8),0x1ad14,21,,,,,,
+930,1,931,CanSendBuff_Clear,void (uint8),0x1ad64,21,,,,,,
+931,1,932,QT_Can_SendMsg,"static BOOLEAN (uint8, CanMsg)",0x1ada8,21,,,,,,
+932,1,933,QT_Can_Init,void (FUNC_VOID_UINT8CANMSGP),0x1b09c,21,,,,,,
+933,1,934,QT_Can_Main,void (void),0x1b210,21,,,,,,
+934,1,935,QT_Can_CheckSendBuffEnough,"BOOLEAN (uint32, uint8)",0x1b398,21,,,,,,
+935,1,936,QT_Can_ReInit,void (uint8),0x1b444,21,,,,,,
+936,1,937,QT_Can_PostMsg,"BOOLEAN (uint8, CanMsg)",0x1b484,21,,,,,,
+937,1,0,QT_Can_RecvMsg,"void (uint8, uint8)",0x1b4e8,21,,,,,,
+938,0,985,Protocal.c,,,19,,,,,,
+939,1,979,Prot_SubApp,PROT_APP *,0x200029d4,,40,,,1,0,rwx
+940,2,0,dta,PROT_APP_DATA,0x0,,16,,,1,0,rwx
+941,3,942,TotalAddr,uint8,0x0,8,1,0,0,1,0,rwx
+942,3,943,TotalSendPara,uint8,0x1,8,1,0,0,1,0,rwx
+943,3,944,TotalRecvPara,uint8,0x2,8,1,0,0,1,0,rwx
+944,3,961,SendPGN,PROT_PGN *,0x4,,27,,,1,0,rwx
+945,4,946,FramType,uint8,0x0,8,1,0,0,1,0,rwx
+946,4,947,mPDUF,uint8,0x1,8,1,0,0,1,0,rwx
+947,4,948,mPDUS,uint8,0x2,8,1,0,0,1,0,rwx
+948,4,949,mSource,uint8,0x3,8,1,0,0,1,0,rwx
+949,4,950,mPriority,uint8,0x4,8,1,0,0,1,0,rwx
+950,4,951,mPage,uint8,0x5,8,1,0,0,1,0,rwx
+951,4,952,mRsv,uint8,0x6,8,1,0,0,1,0,rwx
+952,4,953,mDataLen,uint16,0x7,7,2,0,0,1,0,rwx
+953,4,954,mData,uint8 *,0x9,8,1,0,0,1,0,rwx
+954,4,955,mDataMaxLen,uint16,0xd,7,2,0,0,1,0,rwx
+955,4,956,mTransRate,MILLISECOND,0xf,7,4,0,0,1,0,rwx
+956,4,957,mTimer,MILLISECOND,0x13,7,4,0,0,1,0,rwx
+957,4,958,mEnable,uint8,0x17,8,1,0,0,1,0,rwx
+958,4,959,mPGState,uint8,0x18,8,1,0,0,1,0,rwx
+959,4,960,mTransType,uint8,0x19,8,1,0,0,1,0,rwx
+960,4,0,mCanNum,uint8,0x1a,8,1,0,0,1,0,rwx
+961,3,978,RecvPGN,PROT_PGN *,0x8,,27,,,1,0,rwx
+962,4,963,FramType,uint8,0x0,8,1,0,0,1,0,rwx
+963,4,964,mPDUF,uint8,0x1,8,1,0,0,1,0,rwx
+964,4,965,mPDUS,uint8,0x2,8,1,0,0,1,0,rwx
+965,4,966,mSource,uint8,0x3,8,1,0,0,1,0,rwx
+966,4,967,mPriority,uint8,0x4,8,1,0,0,1,0,rwx
+967,4,968,mPage,uint8,0x5,8,1,0,0,1,0,rwx
+968,4,969,mRsv,uint8,0x6,8,1,0,0,1,0,rwx
+969,4,970,mDataLen,uint16,0x7,7,2,0,0,1,0,rwx
+970,4,971,mData,uint8 *,0x9,8,1,0,0,1,0,rwx
+971,4,972,mDataMaxLen,uint16,0xd,7,2,0,0,1,0,rwx
+972,4,973,mTransRate,MILLISECOND,0xf,7,4,0,0,1,0,rwx
+973,4,974,mTimer,MILLISECOND,0x13,7,4,0,0,1,0,rwx
+974,4,975,mEnable,uint8,0x17,8,1,0,0,1,0,rwx
+975,4,976,mPGState,uint8,0x18,8,1,0,0,1,0,rwx
+976,4,977,mTransType,uint8,0x19,8,1,0,0,1,0,rwx
+977,4,0,mCanNum,uint8,0x1a,8,1,0,0,1,0,rwx
+978,3,0,AutoSendFlag,uint8,0xc,8,1,0,0,1,0,rwx
+979,1,980,Prot_App_Num,uint8,0x200029d8,8,1,0,0,1,0,rwx
+980,1,981,Prot_Cfg,"void (uint8, PROT_APP)",0x1b544,21,,,,,,
+981,1,982,Prot_Init,void (void),0x1b570,21,,,,,,
+982,1,983,Prot_Main,void (void),0x1b5d8,21,,,,,,
+983,1,984,Prot_RecvFram,"uint8 (uint8, J1939_FRAM)",0x1b940,21,,,,,,
+984,1,0,Prot_SendFram,"uint8 (uint8, J1939_FRAM)",0x1b9a4,21,,,,,,
+985,0,1009,J1939.c,,,19,,,,,,
+986,1,998,J1939_TransPG,J1939_TRANS_PG [1],0x200040f0,,76,,,1,0,rwx
+987,2,988,PgStatus,J1939_PG_STATUS,0x0,20,1,0,0,1,0,rwx
+988,2,989,ConnectStatus,J1939_CONNECT_STATUS,0x1,20,1,0,0,1,0,rwx
+989,2,990,NextFramNum,uint8,0x2,8,1,0,0,1,0,rwx
+990,2,991,FramStart_CTS,uint8,0x3,8,1,0,0,1,0,rwx
+991,2,992,FramTotal_CTS,uint8,0x4,8,1,0,0,1,0,rwx
+992,2,993,TotalFramNum,uint8,0x5,8,1,0,0,1,0,rwx
+993,2,994,TotalLen,uint16,0x6,7,2,0,0,1,0,rwx
+994,2,995,LastTime,MILLISECOND,0x8,7,4,0,0,1,0,rwx
+995,2,996,Data,uint8 [60],0xc,8,1,0,0,1,0,rwx
+996,2,997,PGN,uint8 [3],0x48,8,1,0,0,1,0,rwx
+997,2,0,CanNum,uint8,0x4b,8,1,0,0,1,0,rwx
+998,1,999,J1939_Trans_SendRTS,uint8 (uint8),0x1b9c4,21,,,,,,
+999,1,1000,J1939_Trans_Abort,uint8 (uint8),0x1ba7c,21,,,,,,
+1000,1,1001,J1939_Trans_SendDT,uint8 (uint8),0x1bb20,21,,,,,,
+1001,1,1002,J1939_Trans_RecvFram,"uint8 (uint8, CanMsg)",0x1bcac,21,,,,,,
+1002,1,1003,J1939_Trans_SendFram,"uint8 (uint8, J1939_FRAM)",0x1bdf4,21,,,,,,
+1003,1,1004,J1939_Trans_Init,void (void),0x1bfa8,21,,,,,,
+1004,1,1005,J1939_Trans_Main,void (void),0x1bfe0,21,,,,,,
+1005,1,1006,J1939_Init,void (void),0x1c110,21,,,,,,
+1006,1,1007,J1939_RecvFram,"void (uint8, CanMsg)",0x1c11c,21,,,,,,
+1007,1,1008,J1939_SendFram,"uint8 (uint8, J1939_FRAM)",0x1c1f4,21,,,,,,
+1008,1,0,J1939_Main,void (void),0x1c304,21,,,,,,
+1009,0,1018,FParaStore.c,,,19,,,,,,
+1010,1,1011,FParaStore_Buff,uint8 [1024],0x200029dc,8,1,0,0,1,0,rwx
+1011,1,1012,FPara_CurReadAddr,uint32 [3],0x20002ddc,7,4,0,0,1,0,rwx
+1012,1,1013,FPara_CurWriteAddr,uint32 [3],0x20002de8,7,4,0,0,1,0,rwx
+1013,1,1014,FParaStore_InitOK,uint8 [3],0x20002df4,8,1,0,0,1,0,rwx
+1014,1,1015,FParaStore_CheckBlank,"static BOOLEAN (void *, uint32)",0x1c310,21,,,,,,
+1015,1,1016,FParaStore_Init,BOOLEAN (void),0x1c354,21,,,,,,
+1016,1,1017,FParaStore_Write,"BOOLEAN (uint8, void *)",0x1c8d8,21,,,,,,
+1017,1,0,FParaStore_Read,"BOOLEAN (uint8, void *)",0x1cda0,21,,,,,,
+1018,0,1025,DataOper.c,,,19,,,,,,
+1019,1,1020,chCRCHTalbe,unsigned char [256] const,0x20404,8,1,0,0,1,0,rwx
+1020,1,1021,chCRCLTalbe,unsigned char [256] const,0x20504,8,1,0,0,1,0,rwx
+1021,1,1022,Crc16_Calculate,"uint16 (uint8, uint16)",0x1cf54,21,,,,,,
+1022,1,1023,Data_CalRes_Down,"uint32 (uint32, uint32, uint16, uint16)",0x1cfbc,21,,,,,,
+1023,1,1024,Data_Findlsbone,uint8 (uint32),0x1d028,21,,,,,,
+1024,1,0,Data_CheckArrayBit,"BOOLEAN (uint8, uint16)",0x1d070,21,,,,,,
+1025,0,1037,Current.c,,,19,,,,,,
+1026,1,1032,Current_Var,CURRENT_VAR [1],0x2000413c,,18,,,1,0,rwx
+1027,2,1028,Current,CURRENT_MA,0x0,5,4,0,0,1,0,rwx
+1028,2,1029,CurrentI,CURRENTI_MAMS,0x4,5,4,0,0,1,0,rwx
+1029,2,1030,DiagbErrStatus,uint16,0x8,7,2,0,0,1,0,rwx
+1030,2,1031,PulseDisChgCurrentI,CURRENTI_MAMS,0xa,5,4,0,0,1,0,rwx
+1031,2,0,PulseChgCurrentI,CURRENTI_MAMS,0xe,5,4,0,0,1,0,rwx
+1032,1,1033,Cur_Init,void (void),0x1d0b0,21,,,,,,
+1033,1,1034,Cur_Main,void (void),0x1d13c,21,,,,,,
+1034,1,1035,Cur_ClrCurrentI,void (uint8),0x1d19c,21,,,,,,
+1035,1,1036,Cur_GetCurVal,CURRENT_MA (uint8),0x1d1d4,21,,,,,,
+1036,1,0,Cur_GetCurIVal,CURRENTI_MAMS (uint8),0x1d200,21,,,,,,
+1037,0,1075,CAN_TransProc.c,,,19,,,,,,
+1038,1,1039,CanTp_App_Num,uint8,0x20002df7,8,1,0,0,1,0,rwx
+1039,1,1070,CanTp_SubApp,CANTP_APP *,0x20002df8,,12,,,1,0,rwx
+1040,2,0,Pdu,TP_PDU *,0x0,,40,,,1,0,rwx
+1041,3,1042,CANID,uint8,0x0,8,1,0,0,1,0,rwx
+1042,3,1043,RxFrameID,uint32,0x4,7,4,0,0,1,0,rwx
+1043,3,1044,RxFrameIDE,uint8,0x8,8,1,0,0,1,0,rwx
+1044,3,1045,TxFrameID,uint32,0xc,7,4,0,0,1,0,rwx
+1045,3,1046,TxFrameIDE,uint8,0x10,8,1,0,0,1,0,rwx
+1046,3,1047,RxInvtTime,MILLISECOND,0x14,7,4,0,0,1,0,rwx
+1047,3,1048,TxInvtTime,MILLISECOND,0x18,7,4,0,0,1,0,rwx
+1048,3,1049,RxPduNum,uint8,0x1c,8,1,0,0,1,0,rwx
+1049,3,1050,TxPduNum,uint8,0x1d,8,1,0,0,1,0,rwx
+1050,3,1060,pRxPdu,TP_PCU *,0x20,,24,,,1,0,rwx
+1051,4,1052,pCData,void *,0x0,21,4,0,0,1,0,rwx
+1052,4,1053,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+1053,4,1054,Status,uint8,0x6,8,1,0,0,1,0,rwx
+1054,4,1055,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+1055,4,1056,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+1056,4,1057,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+1057,4,1058,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+1058,4,1059,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+1059,4,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+1060,3,0,pTxPdu,TP_PCU *,0x24,,24,,,1,0,rwx
+1061,4,1062,pCData,void *,0x0,21,4,0,0,1,0,rwx
+1062,4,1063,BufLen,uint16,0x4,7,2,0,0,1,0,rwx
+1063,4,1064,Status,uint8,0x6,8,1,0,0,1,0,rwx
+1064,4,1065,RollCount,uint8,0x7,8,1,0,0,1,0,rwx
+1065,4,1066,SubID,uint8,0x8,8,1,0,0,1,0,rwx
+1066,4,1067,BsLen,uint16,0xa,7,2,0,0,1,0,rwx
+1067,4,1068,BsIndex,uint16,0xc,7,2,0,0,1,0,rwx
+1068,4,1069,TimeStamp,MILLISECOND,0x10,7,4,0,0,1,0,rwx
+1069,4,0,Code,uint16,0x14,7,2,0,0,1,0,rwx
+1070,1,1071,CanTp_Init,"void (CANTP_APP, uint8)",0x1d22c,21,,,,,,
+1071,1,1072,CanTp_Main,void (void),0x1d35c,21,,,,,,
+1072,1,1073,CanTp_GetTxPdu_P,"TP_PCU (TP_PDU, uint16)",0x1d76c,21,,,,,,
+1073,1,1074,CanTp_Transmit,void (TP_PCU),0x1d898,21,,,,,,
+1074,1,0,CanTp_RecvFram,"BOOLEAN (uint8, CanMsg)",0x1d950,21,,,,,,
+1075,0,1101,BmsSoc.c,,,19,,,,,,
+1076,1,1092,BmsSoc_Info,BMSSOC_INFO,0x20004150,,48,,,1,0,rwx
+1077,2,1078,Soc,SOCSOH_01PER,0x0,7,2,0,0,1,0,rwx
+1078,2,1079,Sox,SOCSOH_01PER,0x2,7,2,0,0,1,0,rwx
+1079,2,1080,Soh,SOCSOH_01PER,0x4,7,2,0,0,1,0,rwx
+1080,2,1081,QInThis,QTYPE_001AH,0x6,7,4,0,0,1,0,rwx
+1081,2,1082,QOutThis,QTYPE_001AH,0xa,7,4,0,0,1,0,rwx
+1082,2,1083,EInThis,ETYPE_WH,0xe,7,4,0,0,1,0,rwx
+1083,2,1084,EOutThis,ETYPE_WH,0x12,7,4,0,0,1,0,rwx
+1084,2,0,Nvm_Info,BMSSOC_NVM_INFO,0x16,,26,,,1,0,rwx
+1085,3,1086,CurQ,QTYPE_001AH,0x0,7,4,0,0,1,0,rwx
+1086,3,1087,CurQmax,QTYPE_001AH,0x4,7,4,0,0,1,0,rwx
+1087,3,1088,QInComulative,QTYPE_001AH,0x8,7,4,0,0,1,0,rwx
+1088,3,1089,QOutComulative,QTYPE_001AH,0xc,7,4,0,0,1,0,rwx
+1089,3,1090,EInComulative,ETYPE_WH,0x10,7,4,0,0,1,0,rwx
+1090,3,1091,EOutComulative,ETYPE_WH,0x14,7,4,0,0,1,0,rwx
+1091,3,0,crc16,uint16,0x18,7,2,0,0,1,0,rwx
+1092,1,1093,BmsSoc_GetNVM,static void (void),0x1ddc0,21,,,,,,
+1093,1,1094,BmsSoc_CalSOC,static void (void),0x1de18,21,,,,,,
+1094,1,1095,BmsSoc_CalSOH,static void (void),0x1deb8,21,,,,,,
+1095,1,1096,BmsSoc_QIntegral,static void (void),0x1df10,21,,,,,,
+1096,1,1097,BmsSoc_LmtCorrect,static void (void),0x1e108,21,,,,,,
+1097,1,1098,BmsSoc_SetNVM,void (void),0x1e270,21,,,,,,
+1098,1,1099,BmsSoc_SetSoc,BOOLEAN (SOCSOH_01PER),0x1e284,21,,,,,,
+1099,1,1100,BmsSoc_Main,void (void),0x1e2dc,21,,,,,,
+1100,1,0,BmsSoc_Init,void (void),0x1e31c,21,,,,,,
+1101,0,1133,BmsSample.c,,,19,,,,,,
+1102,1,1122,Sample_Var,BMSSAMPLEVAR,0x20004180,,72,,,1,0,rwx
+1103,2,1104,CellVolt,CELLVOLT_01MV [16],0x0,7,2,0,0,1,0,rwx
+1104,2,1105,PackVolt,TERMINALVOLT_MV,0x20,7,4,0,0,1,0,rwx
+1105,2,1106,Gpio1Volt,CELLVOLT_01MV,0x24,7,2,0,0,1,0,rwx
+1106,2,1107,ShuntVolt,int32,0x26,5,4,0,0,1,0,rwx
+1107,2,1108,Temp,TEMPERATURE_1C [5],0x2a,6,1,0,0,1,0,rwx
+1108,2,1109,SampleStatus,uint8,0x2f,8,1,0,0,1,0,rwx
+1109,2,1110,SampleRc,uint8,0x30,8,1,0,0,1,0,rwx
+1110,2,1111,DiagErrCount,uint8 [3],0x31,8,1,0,0,1,0,rwx
+1111,2,1112,OpenWire,uint8 [2],0x34,8,1,0,0,1,0,rwx
+1112,2,1113,Balance_Mode,uint8,0x36,8,1,0,0,1,0,rwx
+1113,2,1114,Balance_CtrlStatus,uint8 [2],0x37,8,1,0,0,1,0,rwx
+1114,2,1115,Balance_DiagStatus,uint8 [2],0x39,8,1,0,0,1,0,rwx
+1115,2,1116,Balance_LastSetMarkTime,MILLISECOND,0x3b,7,4,0,0,1,0,rwx
+1116,2,1117,bSample_State_Read_Ready,BOOLEAN,0x3f,8,1,0,0,1,0,rwx
+1117,2,1118,DisShortRc,uint8,0x40,8,1,0,0,1,0,rwx
+1118,2,1119,MainDisFET,BOOLEAN,0x41,8,1,0,0,1,0,rwx
+1119,2,1120,PreDisFET,BOOLEAN,0x42,8,1,0,0,1,0,rwx
+1120,2,1121,ChgFET,BOOLEAN,0x43,8,1,0,0,1,0,rwx
+1121,2,0,pPublicBuff,void *,0x44,21,4,0,0,1,0,rwx
+1122,1,1123,AN49503A_FET_Ctrl,static void (void),0x1e33c,21,,,,,,
+1123,1,1124,AN49503A_PBalance_Ctrl,static void (void),0x1e3bc,21,,,,,,
+1124,1,1125,Sample_DiagResultProcess,static void (uint8),0x1e3f4,21,,,,,,
+1125,1,1126,AN49503A_Drv_Main,static void (void),0x1e424,21,,,,,,
+1126,1,1127,Sample_Balance_Main,static void (void),0x1e57c,21,,,,,,
+1127,1,1128,Sample_Main,void (void),0x1e5cc,21,,,,,,
+1128,1,1129,Sample_Init,void (void *),0x1e61c,21,,,,,,
+1129,1,1130,Sample_ClrReadyStatus,void (void),0x1e66c,21,,,,,,
+1130,1,1131,Balance_SetCellCtrl,"BOOLEAN (uint8, BOOLEAN)",0x1e684,21,,,,,,
+1131,1,1132,Sample_BalanceSetMode,void (SAMPLE_BALANCEMODE),0x1e728,21,,,,,,
+1132,1,0,Sample_BalanceGetMode,SAMPLE_BALANCEMODE (void),0x1e774,21,,,,,,
+1133,0,1156,BmsProcess.c,,,19,,,,,,
+1134,1,1152,Process_Var,BMSPROCESSVAR,0x200041c8,,59,,,1,0,rwx
+1135,2,1136,bProcessValid,BOOLEAN,0x0,8,1,0,0,1,0,rwx
+1136,2,1137,CellVolt,CELLVOLT_01MV [16],0x1,7,2,0,0,1,0,rwx
+1137,2,1138,Temp,TEMPERATURE_1C [5],0x21,6,1,0,0,1,0,rwx
+1138,2,1139,TerminalVolt,TERMINALVOLT_01MV,0x26,7,4,0,0,1,0,rwx
+1139,2,1140,MaxVoltNum,uint8,0x2a,8,1,0,0,1,0,rwx
+1140,2,1141,MinVoltNum,uint8,0x2b,8,1,0,0,1,0,rwx
+1141,2,1142,MaxCellVolt,CELLVOLT_01MV,0x2c,7,2,0,0,1,0,rwx
+1142,2,1143,MinCellVolt,CELLVOLT_01MV,0x2e,7,2,0,0,1,0,rwx
+1143,2,1144,CellDiff,CELLVOLT_01MV,0x30,7,2,0,0,1,0,rwx
+1144,2,1145,AverageCellVolt,CELLVOLT_01MV,0x32,7,2,0,0,1,0,rwx
+1145,2,1146,MaxTempNum,uint8,0x34,8,1,0,0,1,0,rwx
+1146,2,1147,MinTempNum,uint8,0x35,8,1,0,0,1,0,rwx
+1147,2,1148,MaxTemp,TEMPERATURE_1C,0x36,6,1,0,0,1,0,rwx
+1148,2,1149,MinTemp,TEMPERATURE_1C,0x37,6,1,0,0,1,0,rwx
+1149,2,1150,TempDiff,TEMPERATURE_1C,0x38,6,1,0,0,1,0,rwx
+1150,2,1151,AverageTemp,TEMPERATURE_1C,0x39,6,1,0,0,1,0,rwx
+1151,2,0,BatRunStatus,BAT_RUN_STATUS,0x3a,20,1,0,0,1,0,rwx
+1152,1,1153,Process_CalTemp,static void (void),0x1e78c,21,,,,,,
+1153,1,1154,Process_CalCell,static void (void),0x1e908,21,,,,,,
+1154,1,1155,Process_Main,void (void),0x1ea70,21,,,,,,
+1155,1,0,Process_Init,void (void),0x1ea88,21,,,,,,
+1156,0,1159,BmsManager.c,,,19,,,,,,
+1157,1,1158,BmsManager_Main,void (void),0x1eaa4,21,,,,,,
+1158,1,0,BmsManager_Init,void (void),0x1eae0,21,,,,,,
+1159,0,1164,BmsBalance.c,,,19,,,,,,
+1160,1,1161,BmsBalance_Clear,static void (void),0x1eaf4,21,,,,,,
+1161,1,1162,BmsBalance_PushIndexToQueue,static BOOLEAN (uint8),0x1eb1c,21,,,,,,
+1162,1,1163,BmsBalance_Init,void (void),0x1ec0c,21,,,,,,
+1163,1,0,BmsBalance_Main,void (void),0x1ec28,21,,,,,,
+1164,0,1166,memcmp.c,,,19,,,,,,
+1165,1,0,memcmp,"int_t (voidconst *, voidconst * voidconst *, size_t)",0x1edd8,21,,,,,,
+1166,0,1168,memcpy.c,,,19,,,,,,
+1167,1,0,memcpy,"void * (void *, voidconst * void *, size_t)",0x1edfc,21,,,,,,
+1168,0,1170,memset.c,,,19,,,,,,
+1169,1,0,memset,"void * (void *, int_t, size_t)",0x1ee12,21,,,,,,
+1170,0,0,__filll_mem.c,,,19,,,,,,
+1171,1,0,__fill_mem,"void  __fill_mem (void *, int_t, uint32_t)",0x1ee1e,21,,,,,,
+$,****,枚举列表,****,,,,,,,,,
+0,1,22,ALARM_ENUM_TYPE,,,,,,,,,
+1,2,2,ALARM_I_SOC_LOW,0,,,,,,,,
+2,2,3,ALARM_I_CELL_DIFF,1,,,,,,,,
+3,2,4,ALARM_I_DIS_TEMP_LOW,2,,,,,,,,
+4,2,5,ALARM_I_DIS_TEMP_HIG,3,,,,,,,,
+5,2,6,ALARM_I_DIS_CURRENT_HIG,4,,,,,,,,
+6,2,7,ALARM_I_DIS_CELL_LOW,5,,,,,,,,
+7,2,8,ALARM_I_CHG_TEMP_LOW,6,,,,,,,,
+8,2,9,ALARM_I_CHG_TEMP_HIG,7,,,,,,,,
+9,2,10,ALARM_I_CHG_CURRENT_HIG,8,,,,,,,,
+10,2,11,ALARM_I_CHG_CELL_HIGH,9,,,,,,,,
+11,2,12,ALARM_II_DIS_TEMP_LOW,10,,,,,,,,
+12,2,13,ALARM_II_DIS_TEMP_HIG,11,,,,,,,,
+13,2,14,ALARM_II_DIS_CURRENT_HIG,12,,,,,,,,
+14,2,15,ALARM_II_DIS_CELL_LOW,13,,,,,,,,
+15,2,16,ALARM_II_DIS_SHORT,14,,,,,,,,
+16,2,17,ALARM_II_CHG_TEMP_LOW,15,,,,,,,,
+17,2,18,ALARM_II_CHG_TEMP_HIG,16,,,,,,,,
+18,2,19,ALARM_II_CHG_CURRENT_HIG,17,,,,,,,,
+19,2,20,ALARM_II_CHG_CELL_HIGH,18,,,,,,,,
+20,2,21,ALARM_II_CELL_DIFF,19,,,,,,,,
+21,2,0,ALARM_TOTAL_NUM,20,,,,,,,,
+22,1,156,IRQn_Type,,,,,,,,,
+23,2,24,NotAvail_IRQn,-128,,,,,,,,
+24,2,25,NonMaskableInt_IRQn,-14,,,,,,,,
+25,2,26,HardFault_IRQn,-13,,,,,,,,
+26,2,27,MemoryManagement_IRQn,-12,,,,,,,,
+27,2,28,BusFault_IRQn,-11,,,,,,,,
+28,2,29,UsageFault_IRQn,-10,,,,,,,,
+29,2,30,SVCall_IRQn,-5,,,,,,,,
+30,2,31,DebugMonitor_IRQn,-4,,,,,,,,
+31,2,32,PendSV_IRQn,-2,,,,,,,,
+32,2,33,SysTick_IRQn,-1,,,,,,,,
+33,2,34,DMA0_IRQn,0,,,,,,,,
+34,2,35,DMA1_IRQn,1,,,,,,,,
+35,2,36,DMA2_IRQn,2,,,,,,,,
+36,2,37,DMA3_IRQn,3,,,,,,,,
+37,2,38,DMA4_IRQn,4,,,,,,,,
+38,2,39,DMA5_IRQn,5,,,,,,,,
+39,2,40,DMA6_IRQn,6,,,,,,,,
+40,2,41,DMA7_IRQn,7,,,,,,,,
+41,2,42,DMA8_IRQn,8,,,,,,,,
+42,2,43,DMA9_IRQn,9,,,,,,,,
+43,2,44,DMA10_IRQn,10,,,,,,,,
+44,2,45,DMA11_IRQn,11,,,,,,,,
+45,2,46,DMA12_IRQn,12,,,,,,,,
+46,2,47,DMA13_IRQn,13,,,,,,,,
+47,2,48,DMA14_IRQn,14,,,,,,,,
+48,2,49,DMA15_IRQn,15,,,,,,,,
+49,2,50,DMA_Error_IRQn,16,,,,,,,,
+50,2,51,MCM_IRQn,17,,,,,,,,
+51,2,52,FTFC_IRQn,18,,,,,,,,
+52,2,53,Read_Collision_IRQn,19,,,,,,,,
+53,2,54,LVD_LVW_IRQn,20,,,,,,,,
+54,2,55,FTFC_Fault_IRQn,21,,,,,,,,
+55,2,56,WDOG_EWM_IRQn,22,,,,,,,,
+56,2,57,RCM_IRQn,23,,,,,,,,
+57,2,58,LPI2C0_Master_IRQn,24,,,,,,,,
+58,2,59,LPI2C0_Slave_IRQn,25,,,,,,,,
+59,2,60,LPSPI0_IRQn,26,,,,,,,,
+60,2,61,LPSPI1_IRQn,27,,,,,,,,
+61,2,62,LPSPI2_IRQn,28,,,,,,,,
+62,2,63,Reserved45_IRQn,29,,,,,,,,
+63,2,64,Reserved46_IRQn,30,,,,,,,,
+64,2,65,LPUART0_RxTx_IRQn,31,,,,,,,,
+65,2,66,LPUART0_ERR_IRQn,32,,,,,,,,
+66,2,67,LPUART1_RxTx_IRQn,33,,,,,,,,
+67,2,68,LPUART1_ERR_IRQn,34,,,,,,,,
+68,2,69,LPUART2_RxTx_IRQn,35,,,,,,,,
+69,2,70,LPUART2_ERR_IRQn,36,,,,,,,,
+70,2,71,Reserved53_IRQn,37,,,,,,,,
+71,2,72,Reserved54_IRQn,38,,,,,,,,
+72,2,73,ADC0_IRQn,39,,,,,,,,
+73,2,74,ADC1_IRQn,40,,,,,,,,
+74,2,75,CMP0_IRQn,41,,,,,,,,
+75,2,76,Reserved58_IRQn,42,,,,,,,,
+76,2,77,Reserved59_IRQn,43,,,,,,,,
+77,2,78,ERM_single_fault_IRQn,44,,,,,,,,
+78,2,79,ERM_double_fault_IRQn,45,,,,,,,,
+79,2,80,RTC_IRQn,46,,,,,,,,
+80,2,81,RTC_Seconds_IRQn,47,,,,,,,,
+81,2,82,LPIT0_Ch0_IRQn,48,,,,,,,,
+82,2,83,LPIT0_Ch1_IRQn,49,,,,,,,,
+83,2,84,LPIT0_Ch2_IRQn,50,,,,,,,,
+84,2,85,LPIT0_Ch3_IRQn,51,,,,,,,,
+85,2,86,PDB0_IRQn,52,,,,,,,,
+86,2,87,Reserved69_IRQn,53,,,,,,,,
+87,2,88,Reserved70_IRQn,54,,,,,,,,
+88,2,89,Reserved71_IRQn,55,,,,,,,,
+89,2,90,Reserved72_IRQn,56,,,,,,,,
+90,2,91,SCG_IRQn,57,,,,,,,,
+91,2,92,LPTMR0_IRQn,58,,,,,,,,
+92,2,93,PORTA_IRQn,59,,,,,,,,
+93,2,94,PORTB_IRQn,60,,,,,,,,
+94,2,95,PORTC_IRQn,61,,,,,,,,
+95,2,96,PORTD_IRQn,62,,,,,,,,
+96,2,97,PORTE_IRQn,63,,,,,,,,
+97,2,98,SWI_IRQn,64,,,,,,,,
+98,2,99,Reserved81_IRQn,65,,,,,,,,
+99,2,100,Reserved82_IRQn,66,,,,,,,,
+100,2,101,Reserved83_IRQn,67,,,,,,,,
+101,2,102,PDB1_IRQn,68,,,,,,,,
+102,2,103,FLEXIO_IRQn,69,,,,,,,,
+103,2,104,Reserved86_IRQn,70,,,,,,,,
+104,2,105,Reserved87_IRQn,71,,,,,,,,
+105,2,106,Reserved88_IRQn,72,,,,,,,,
+106,2,107,Reserved89_IRQn,73,,,,,,,,
+107,2,108,Reserved90_IRQn,74,,,,,,,,
+108,2,109,Reserved91_IRQn,75,,,,,,,,
+109,2,110,Reserved92_IRQn,76,,,,,,,,
+110,2,111,Reserved93_IRQn,77,,,,,,,,
+111,2,112,CAN0_ORed_IRQn,78,,,,,,,,
+112,2,113,CAN0_Error_IRQn,79,,,,,,,,
+113,2,114,CAN0_Wake_Up_IRQn,80,,,,,,,,
+114,2,115,CAN0_ORed_0_15_MB_IRQn,81,,,,,,,,
+115,2,116,CAN0_ORed_16_31_MB_IRQn,82,,,,,,,,
+116,2,117,Reserved99_IRQn,83,,,,,,,,
+117,2,118,Reserved100_IRQn,84,,,,,,,,
+118,2,119,CAN1_ORed_IRQn,85,,,,,,,,
+119,2,120,CAN1_Error_IRQn,86,,,,,,,,
+120,2,121,CAN1_Wake_Up_IRQn,87,,,,,,,,
+121,2,122,CAN1_ORed_0_15_MB_IRQn,88,,,,,,,,
+122,2,123,CAN1_ORed_16_31_MB_IRQn,89,,,,,,,,
+123,2,124,Reserved106_IRQn,90,,,,,,,,
+124,2,125,Reserved107_IRQn,91,,,,,,,,
+125,2,126,CAN2_ORed_IRQn,92,,,,,,,,
+126,2,127,CAN2_Error_IRQn,93,,,,,,,,
+127,2,128,CAN2_Wake_Up_IRQn,94,,,,,,,,
+128,2,129,CAN2_ORed_0_15_MB_IRQn,95,,,,,,,,
+129,2,130,CAN2_ORed_16_31_MB_IRQn,96,,,,,,,,
+130,2,131,Reserved113_IRQn,97,,,,,,,,
+131,2,132,Reserved114_IRQn,98,,,,,,,,
+132,2,133,FTM0_Ch0_Ch1_IRQn,99,,,,,,,,
+133,2,134,FTM0_Ch2_Ch3_IRQn,100,,,,,,,,
+134,2,135,FTM0_Ch4_Ch5_IRQn,101,,,,,,,,
+135,2,136,FTM0_Ch6_Ch7_IRQn,102,,,,,,,,
+136,2,137,FTM0_Fault_IRQn,103,,,,,,,,
+137,2,138,FTM0_Ovf_Reload_IRQn,104,,,,,,,,
+138,2,139,FTM1_Ch0_Ch1_IRQn,105,,,,,,,,
+139,2,140,FTM1_Ch2_Ch3_IRQn,106,,,,,,,,
+140,2,141,FTM1_Ch4_Ch5_IRQn,107,,,,,,,,
+141,2,142,FTM1_Ch6_Ch7_IRQn,108,,,,,,,,
+142,2,143,FTM1_Fault_IRQn,109,,,,,,,,
+143,2,144,FTM1_Ovf_Reload_IRQn,110,,,,,,,,
+144,2,145,FTM2_Ch0_Ch1_IRQn,111,,,,,,,,
+145,2,146,FTM2_Ch2_Ch3_IRQn,112,,,,,,,,
+146,2,147,FTM2_Ch4_Ch5_IRQn,113,,,,,,,,
+147,2,148,FTM2_Ch6_Ch7_IRQn,114,,,,,,,,
+148,2,149,FTM2_Fault_IRQn,115,,,,,,,,
+149,2,150,FTM2_Ovf_Reload_IRQn,116,,,,,,,,
+150,2,151,FTM3_Ch0_Ch1_IRQn,117,,,,,,,,
+151,2,152,FTM3_Ch2_Ch3_IRQn,118,,,,,,,,
+152,2,153,FTM3_Ch4_Ch5_IRQn,119,,,,,,,,
+153,2,154,FTM3_Ch6_Ch7_IRQn,120,,,,,,,,
+154,2,155,FTM3_Fault_IRQn,121,,,,,,,,
+155,2,0,FTM3_Ovf_Reload_IRQn,122,,,,,,,,
+156,1,160,QTOS_THREAD_TYPE,,,,,,,,,
+157,2,158,Qtos_ThreadTypeNull,0,,,,,,,,
+158,2,159,Qtos_NormalThread,1,,,,,,,,
+159,2,0,Qtos_RealThread,2,,,,,,,,
+160,1,164,J1939_PG_STATUS,,,,,,,,,
+161,2,162,J1939_PG_RECV,0,,,,,,,,
+162,2,163,J1939_PG_SEND,1,,,,,,,,
+163,2,0,J1939_PG_IDLE,2,,,,,,,,
+164,1,171,J1939_CONNECT_STATUS,,,,,,,,,
+165,2,166,J1939_CONNECT_IDLE,0,,,,,,,,
+166,2,167,J1939_CONNECT_SENDRTS,1,,,,,,,,
+167,2,168,J1939_CONNECT_WAITCTS,2,,,,,,,,
+168,2,169,J1939_CONNECT_SENDDT,3,,,,,,,,
+169,2,170,J1939_CONNECT_WAITENDACK,4,,,,,,,,
+170,2,0,J1939_CONNECT_WAITRTS,5,,,,,,,,
+171,1,0,BAT_RUN_STATUS,,,,,,,,,
+172,2,173,BAT_RUN_DISCHARGE,0,,,,,,,,
+173,2,0,BAT_RUN_CHARGE,1,,,,,,,,
+$,文件路径:,D:\Battery\Software_BMS\AGV\application\Trunk\Project\AGV\AGV_PBMS_V1.0\Bin\AGV_PBMS_V1.0.elf,,,,,,,,,,
+$,****,ELF头信息,****,,,,,,,,,
+,Magic,7f 45 4c 46 1 1 1 0 0 0 0 0 0 0 0 0,,,,,,,,,,
+,类别,ELF32,,,,,,,,,,
+,数据编码方式,大端序(MSB低位在前),,,,,,,,,,
+,文件类型,2 EXEC (可执行文件 Executable file),,,,,,,,,,
+,目标架构,40 Advanced RISC Machines ARM,,,,,,,,,,
+,目标文件版本,1 (current),,,,,,,,,,
+,OS/ABI,0,,,,,,,,,,
+,ABI版本,0,,,,,,,,,,
+,入口点地址,0x12401,,,,,,,,,,
+,程序头部起点,0x34(bytes into file),,,,,,,,,,
+,节区头部起点,0xbcd88(bytes into file),,,,,,,,,,
+,处理器标志,0x5000202,,,,,,,,,,
+,ELF头部大小,52(字节),,,,,,,,,,
+,程序头部大小,32(字节),,,,,,,,,,
+,程序个数,5,,,,,,,,,,
+,节区头部大小,40(字节),,,,,,,,,,
+,节区个数,24,,,,,,,,,,
+,字符串表索引节头,21,,,,,,,,,,
+,Pointer Size,4,,,,,,,,,,
+$,基类型的编码DW_AT_encoding,,,,,,,,,,,
+$,address,1,linear machine address,段地址,,,,,,,,
+$,boolean,2,true or false,,,,,,,,,
+$,complex_float,3,complex binary floating-point number,复数二进制浮点数,,,,,,,,
+$,float,4,binary floating-point number,二进制浮点数,,,,,,,,
+$,signed,5,signed binary integer,有符号二进制整数,,,,,,,,
+$,signed char,6,signed character,有符号字符,,,,,,,,
+$,unsigned,7,unsigned binary integer,无符号二进制整数,,,,,,,,
+$,unsigned char,8,unsigned character,无符号字符,,,,,,,,
+$,imaginary_float,9,imaginary binary floating-point number,虚数的二进制浮点数,,,,,,,,
+$,packed_decimal,10,packed decimal number,压缩十进制数,,,,,,,,
+$,numeric_string,11,numeric string,数字字符串,,,,,,,,
+$,edited,12,edited string,编辑过的字符,,,,,,,,
+$,signed_fixed,13,signed fixed-point scaled integer,有符号定点缩放整数,,,,,,,,
+$,unsigned_fixed,14,unsigned fixed-point scaled integer,无符号定点缩放整数,,,,,,,,
+$,decimal_float,15,IEEE 754R decimal floating-point number,IEEE 754R十进制浮点数,,,,,,,,
+$,UTF,16,ISO/IEC 10646-1:1993 character,char16_t chr_a = u'h ',,,,,,,,
+$,UCS,17,ISO/IEC 10646-1:1993 character (UCS-4),Fortran中使用,,,,,,,,
+$,ASCII,18,ISO/IEC 646:1991 character,Fortran中使用,,,,,,,,
+$,lo_user,0x80,低位,,,,,,,,,
+$,hi_user,0xff,高位,,,,,,,,,
+$,文件,19,,,,,,,,,,
+$,枚举类型,20,,,,,,,,,,
+$,函数类型,21,,,,,,,,,,
+$,Type和Typesize列会有双引号,,,,,,,,,,,
